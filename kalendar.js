@@ -1,0 +1,318 @@
+
+function addDays(date, days) {
+  var result = new Date(date);
+  result.setDate(result.getDate() + days);
+  return result;
+}
+
+function diffDays(date2, date1) {
+  return(Math.round(date2 - date1)/(24 * 60 * 60 * 1000));
+}
+
+
+// returns the roman numeral; limited to a few thousand?
+function roman_numeral(n) {
+  var r = { "M": 1000, "CM": 900, "D": 500, "CD": 400, "C":100, "XC":90,
+            "L": 50, "XL":40, "X":10, "IX":9, "V":5, "IV":4, "I":1 }
+  var rn = "";
+  for (var i in r) {
+    while (n >= r[i] ) {
+      rn += i;
+      n -= r[i];
+    }
+  }
+  return rn;
+}
+
+function get_easter(y) {
+  var pfm = ["A5", "M25", "A13", "A2", "M22", 
+             "A10", "M30", "A18", "A7", "M27", 
+             "A15", "A4", "M24", "A12", "A1", 
+             "M21", "A9", "M29", "A17"];
+  var a = pfm[y % 19];
+  var m = { M: 2, A: 3 };
+  a = new Date(y, m[a.charAt(0)], Number(a.slice(1)));
+  var b = (diffDays(a, new Date(y, 2, 21)) + 2) % 7;
+  var cent = Math.floor(y/100);
+  var c = Math.abs(cent - 33) % 7;
+  var x = y - cent * 100;
+  var d = (x + Math.floor(x/4)) % 7;
+  var e = 7 - ((b + c + d) % 7);
+  var f = cent - 6 - Math.floor((cent - 12) / 4) + 1;
+  return(addDays(a, e + f));
+}
+
+// TODO: Commemoration of Feria?
+// TODO: Rogation days...
+function get_moveable(y, name) {
+  m = moveable[name];
+  if("basis" in m) {
+    return(addDays(eval("get_" + m["basis"])(y), m["diff"]));
+  }
+}
+
+function get_advent(y) {
+  xmas = new Date(y, 11, 25); 
+  xmasdow = xmas.getDay(); // 0 = Sunday
+  if(xmasdow != 0) { weeks = 3; } else { weeks = 4 };
+  return(addDays(xmas, 0 - xmasdow - 7 * weeks));
+}
+
+function get_ember(y) {
+  // First Wednesday after Holy Cross
+  hc = new Date(y, 8, 14);
+  hcdow = hc.getDay();
+  if(hcdow < 4) {
+    return(addDays(hc, 4 - hcdow)); 
+  } else {
+    return(addDays(hc, 7 - Math.abs(3 - hcdow)));
+  }
+}
+
+function Kalendar(baseyear) {
+  this.k = {};
+  this.k[baseyear] = new KalendarYear(baseyear);
+  this.getDate = function(date) {
+    var y = date.getFullYear();
+    if(!(y in this.k)) { 
+      this.k[y] = new KalendarYear(y); 
+    }
+    out = this.k[y].getDate(date);
+    return(out ? out : "");
+  }
+  this.isAbstinence = function(date) {
+    // if Friday and not Christmas or isFast
+    return((date.getDay() == 5) && (!(date.getMonth == 11 && date.getDate == 25)) || this.isFast(date));
+  }
+  this.isFast = function(date) {
+    // Mon, Wed, Fri in Advent
+    dow = date.getDay();
+    if(date > get_advent(date.getFullYear()) &&
+       date < new Date(date.getFullYear(), 11, 25) &&
+       (dow == 1 || dow == 3 || dow == 5)) {
+      return(true);
+    }
+    // All days in Lent except Sundays
+    if(date >= get_moveable(date.getFullYear(), "Ash Wednesday") &&
+       date <= get_moveable(date.getFullYear(), "Holy Saturday") &&
+       dow != 0) {
+      return(true);
+    }
+    var d = this.getDate(date);
+    // Ember days
+    if(d.search(/Ember/)) {
+      return(true);
+    }
+    // Vigils
+    // TODO: FIX THIS re: 2020 Chistmas Vigil
+    var d2 = this.getDate(addDays(date, 1)); // need tomorrow too
+    var vexpr = "The Vigil of Pentecost|Vigil of the Assumption|Vigil of All Saints|Vigil of the Nativity of the Lord"
+    if((d.match(vexpr) && dow != 0) || (d2.match(vexpr) && dow == 6)) {
+      return(true);
+    }
+    return(false);
+  }
+}
+
+function KalendarYear(year) {
+  this.year = year;
+  // one element per month
+  this.dates = [[], [], [], [], [], [], [], [], [], [], [], []];
+  this.addDate = function(m, d, name) {
+    this.addAtPosition(m - 1, d - 1, name);
+  }
+  this.addDate2 = function(date, name) {
+    this.addAtPosition(date.getMonth(), date.getDate() - 1, name);
+  }
+  this.addAtPosition = function(mp, dp, name) {
+    if(this.dates[mp][dp] == undefined) {
+      this.dates[mp][dp] = new KalendarDate(name);
+    } else {
+      this.dates[mp][dp].push(name);
+    }
+  }
+  this.getDate = function(date) {
+    if(date.getFullYear() != this.year) { throw new Error("Asking for a date outside this kalendar object's year"); }
+    out = this.dates[date.getMonth()][date.getDate() - 1];
+    if(out == undefined) { 
+      return(new KalendarDate("")); // anything better here?
+    } else {
+      return(out);
+    }
+  }
+  this.findDate = function(name) {
+    var len = this.dates.length;
+    while (len--) {
+      var dates = this.dates[len];
+      var dateslen = dates.length;
+      while (dateslen--) {
+        if(dates[dateslen].getName() == name) {
+          return(new Date(this.year, len, dateslen + 1));
+        }
+      }
+    }
+  }
+  this.addSundaysAfterEpiphany = function() {
+    // also add the Sunday within Octave of the Nativity
+    var e = new Date(this.year, 11, 25);
+    this.addDate2(addDays(e, 7 - e.getDay()), "Sunday within the Octave of the Nativity");
+
+    suffix = " Sunday after the Epiphany"
+    e = new Date(this.year, 0, 6);
+    s = get_moveable(this.year, "The Sunday of Septuagesima");
+    n = 0;
+    edow = e.getDay();
+    // add first one
+    ei = addDays(e, 7 - edow);
+    this.addDate2(ei, "The Holy Family: Mary, Jesus & Joseph");
+    this.addDate2(ei, roman_numeral(++n) + suffix);
+    // add the rest
+    while(addDays(ei, 7) < s) {
+      ei = addDays(ei, 7);
+      this.addDate2(ei, roman_numeral(++n) + suffix);
+    }
+  }
+  // TODO: there can be 21 weeks in Pentecost in Orthodox Reckoning... what to do there??
+  // TODO: deal with exceptions to typical metadata (e.g., demotion vs. translation)
+  this.addSundaysAfterTrinity = function() {
+    var t = get_moveable(this.year, "The Feast of the Most Holy Trinity");
+    var a = get_moveable(this.year, "I Sunday in Advent");
+    var w = Math.floor(diffDays(a, t) / 7); // How many weeks in Pentecost
+    console.log(w);
+    nepi = (w - 24); // number of Epiphany Sundays resumed
+    esun = 6 - (w - 25); // which one to start with
+    var n = 0;
+    var stdadd = function(o, t, n) {  // the usual name to add
+      o.addDate2(t, roman_numeral(n + 1) + " Sunday after Pentecost [" + 
+                    roman_numeral(n) + " Trinity]");
+    }
+    var mthadd = function(o, t) {  // add I, II, III... in August, in September, etc.
+      if(t.getMonth() > 6) { // August onwards
+        x = Math.floor(diffDays(t, new Date(t.getFullYear(), t.getMonth(), 1)) / 7) + 1;
+        o.addDate2(t, "(" + roman_numeral(x) + " of " + months[t.getMonth()] + ")");
+      }
+    }
+    while(addDays(t, 7) < a) {
+      t = addDays(t, 7);
+      ++n;
+      if(n + 1 < 22) {
+        stdadd(this, t, n);
+      } else if(n + 1 == 22) {
+        this.addDate2(t, "The Feast of Our Lord Jesus Christ the King");
+        stdadd(this, t, n);
+      } else if(n + 1 == 23) {
+        if(w == 23) { // there are only 23 weeks in Pentecost
+          this.addDate2(addDays(t, -1), "XXIII Sunday after Pentecost (Anticipated)");
+          this.addDate2(t, "XXIV and Last Sunday after Pentecost (Anticipated) [Sunday Next Before Advent]");
+        } else {
+          stdadd(this, t, n)
+        }
+      } else if(nepi > 0) {
+        this.addDate2(t, roman_numeral(esun) + " Sunday after Epiphany (Resumed) [" +
+                      roman_numeral(n) + " Trinity]");
+        --nepi;
+        ++esun;
+      } else {
+        this.addDate2(t, "XXIV and Last Sunday after Pentecost [Sunday Next Before Advent]");
+      }
+      mthadd(this, t);
+    }
+  }
+
+
+  // initialize the calendar
+  for (var m in moveable) {
+    var d = get_moveable(year, m);
+    this.addDate2(d, m);
+  }
+  for (var f in fixed) {
+    this.addDate(fixed[f]["m"], fixed[f]["d"], f);
+  }
+  this.addSundaysAfterEpiphany()
+  this.addSundaysAfterTrinity()
+}
+
+function KalendarDate(name) {
+  this.celes = [];
+  this.celesort = function(c1, c2) {
+    var rank = [ "Sd1", "F1", "V1", "D1", "Sd2", "F2", "D2", 
+                 "Sd", "V2", "Gd", "D", "iv", "F3", "V", "S",
+                 "Comm", "M", "" ];
+    var s1 = c1.getValueAsString("class");
+    var s2 = c2.getValueAsString("class");
+    var class1 = rank.indexOf(s1);
+    var class2 = rank.indexOf(s2);
+    if(class1 == -1) {
+      console.log(s1 + " not found in rank.");
+      class1 = 100;
+    }
+    if(class2 == -1) { 
+      console.log(s2 + " not found in rank.");
+      class2 = 100;
+    }
+    return(class1 - class2);
+  }
+  this.search = function(pattern) {
+    return(this.celes.some(function(c) { return(c.search(pattern) !== -1); }));
+  }
+  this.match = function(pattern) {
+    return(this.celes.some(function(c) { return(c.match(pattern)); }));
+  }
+  this.valueEqual = function(valname, value) {
+    return(this.celes.some(function(c) { 
+      return(c.getValue(valname) == value);
+    }));
+  }
+  this.push = function(name) {
+    this.celes.push(new KalendarCelebration(name));
+  }
+  this.getCelebrations = function() {
+    return(this.celes.sort(this.celesort));
+  }
+  this.names = function() {
+    return(this.celes.map(function(c) { return(c.getName()); }));
+  }
+  this.namesWith = function(valnames) {
+    out = this.celes.map(function(c) {
+      var o = { "name": c.getName() };
+      valnames.map(function(v) { 
+        o[v] = c.getValue(v);
+      });
+      return(o);
+    });
+    return(out); 
+  }
+  this.push(name);
+}
+
+function KalendarCelebration(name) {
+  this.cele = { "name": name }
+  this.getName = function() {
+    return(this.cele["name"]);
+  }
+  this.getValue = function(valname) {
+    var name = this.getName();
+    if(meta[name] == undefined) {
+      console.log(name + " not found in meta");
+      return(undefined);
+    } else {
+      return(meta[name][valname]);
+    }
+  }
+  this.getValueAsString = function(valname) {
+    var o = this.getValue(valname);
+    return(o == undefined ? "" : o); 
+  }
+  this.search = function(pattern) {
+    return(this.getName().search(pattern));
+  }
+  this.match = function(pattern) {
+    return(this.getName().match(pattern));
+  }
+  this.isObligation = function() {
+    return(this.getValue("obligation") == "y");
+  }
+  this.isDevotion = function() {
+    return(this.getValue("devotion") == "y");
+  }
+}

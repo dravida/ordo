@@ -1,0 +1,95 @@
+table {
+  border-collapse: separate;
+  border-spacing: 0 4px;
+  margin: auto;
+  max-width: 600px;
+}
+
+td {
+    word-wrap: break-word;
+    padding: 4px;
+    border-style: solid;
+    border-width: 0px 0px 1px 0px;
+    border-color: #E0E0E0;
+}
+
+body { 
+    font-family: 'Open Sans', sans;
+    font-size: 18pt; 
+}
+
+.fasting, .devotion, .obligation {
+    font-size: 19pt;
+    font-weight: 700;
+}
+
+.celetab {
+  width: 100%;
+}
+
+.celetab td {
+  border-width: 0;
+  padding: 0px;
+}
+
+.year {
+    border-style: solid;
+    border-width: 5px 5px 5px 5px;
+    border-color: black;
+    font-family: 'Cinzel', serif;
+    font-size: 24pt;
+    font-weight: 900;
+    text-align: center;
+}
+
+.month {
+    font-family: 'Cinzel', serif;
+    font-size: 24pt;
+    font-weight: 700;
+    text-align: center;
+    border-style: solid;
+    border-width: 1px 0px 1px 0px;
+    border-color: #CC0000;
+    color: #CC0000;
+}
+
+.date {
+    text-align: right;
+}
+
+.dow {
+    color: #CC0000;
+    text-align: center;
+}
+
+
+.rubric { color: red; }
+
+button {
+    background-color: #F7F7F7;
+    border-style: solid;
+    border-color: black;
+    padding: 4px 20px;
+    margin: 3px 3px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12pt;
+}
+
+.timenav {
+    display: inline-block;
+}
+
+@media screen and (min-width: 600px) {
+    .timenav div {
+        text-align: center;
+        white-space: nowrap;
+    }
+}
+
+@media screen and (max-width: 599px) {
+    .timenav div {
+        text-align: center;
+    }
+}

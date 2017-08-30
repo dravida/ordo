@@ -1,0 +1,82 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel:400,700,900|Open+Sans:400,700" rel="stylesheet"> 
+    <link rel="stylesheet" type="text/css" href="kalendar.css">
+  </head>
+  <body>
+    <table id="kalendar"></table>
+  </body>
+  <script src="kalendar_data.js"></script>
+  <script src="kalendar.js"></script>
+  <script src="js/jquery-2.2.4.min.js"></script>
+  <script>
+    var d = new Date();
+    var k = new Kalendar(d.getFullYear());
+
+    function updateKalendar(d) {
+    var i = 1;
+    var head = true;
+    var makeClassSpan = function(fldstr) {
+      rn = ranknames[fldstr];
+      return("<span" + (rn == undefined ? ">" : (" title='" + rn + "'>")) +
+        fldstr + "</span>");
+    }
+    var makeCelebrationTable = function(d) {
+      cc = k.getDate(d).getCelebrations();
+      m = cc.map(function(c, i) { return(
+        "<tr" +
+        (d.getDay() == 0 & i == 0 ? " style='font-weight: 700;'>" : ">") +
+        "<td style='width: 1em'>" +
+        (c.isObligation() ? "<span class='obligation' title='Day of Obligation'>†</span>" : "") + 
+        (c.isDevotion() ? "<span class='devotion' title='Day of Devotion'>‡</span>" : "") + 
+        "</td><td>" +
+        (d.getDay() == 0 & i == 0 ? c.getName().toUpperCase() : c.getName()) +
+        "</td><td align='right' style='width: 3em'>" +
+        makeClassSpan(c.getValueAsString("class")) +
+        "</td></tr>");
+      });      
+      return("<table class='celetab'>" + m.join("") + "</table>");
+    }
+    $("#kalendar").children().remove();
+
+$("#kalendar").append('<tr><td colspan="6" align="center"><div class="timenav"> \
+      <div> \
+      <button title="Back one year" onclick="d = new Date(d.getFullYear() - 1, d.getMonth(), d.getDate()); updateKalendar(d);">&lt;&lt;&lt;</button> \
+      <button title="Back 28 days" onclick="d = addDays(d, -28); updateKalendar(d);">&lt;&lt;</button> \
+      <button title="Back 1 day" onclick="d = addDays(d, -1); updateKalendar(d);">&lt;</button> \
+      <button onclick="d = new Date(); updateKalendar(d);">Today</button> \
+      <button title="Forward 1 day" onclick="d = addDays(d, 1); updateKalendar(d);">&gt;</button> \
+      <button title="Forward 28 days" onclick="d = addDays(d, 28); updateKalendar(d);">&gt;&gt;</button> \
+      <button title="Forward 1 year" onclick="d = new Date(d.getFullYear() + 1, d.getMonth(), d.getDate()); updateKalendar(d);">&gt;&gt;&gt;</button> \
+      </div> \
+    </div></td></tr>');
+
+
+    while (i < 29) {
+      if(d.getMonth() == 0 && d.getDate() == 1 || head) {
+        $("#kalendar").append('<tr><td colspan="6" class="year">' +  d.getFullYear()  +  "</td><td>");     
+      }
+      if(d.getDate() == 1 || head) {
+        $("#kalendar").append('<tr><td colspan="6" class="month">' +  months[d.getMonth()] +  "</td><td>");     
+        head = false;
+      }
+      $("#kalendar").append("<tr" + 
+        (d.getDay() == 0 ? " style='font-weight: 700;'>" : ">") +
+        "<td class='date'>" + d.getDate() + "</td><td class='dow'>" +
+        daysofweek[d.getDay()] + "</td><td>" +
+        (k.isAbstinence(d) ? "<img src='fish.svg' height='15px' title='Day of Abstinence'/>" : "") + "</td><td>" +
+        (k.isFast(d) ? "<span class='fasting' title='Day of Fasting'>§</span>" : "") + "</td><td>" +
+        makeCelebrationTable(d) + // inner table for celebrations
+        "</td></tr>"
+      );
+      d = addDays(d, 1);
+      i++;
+    }
+    // remove the border from the last row
+    $("#kalendar td.year").parent().prev().find("td").css("border", "0");
+    $("#kalendar td.month").parent().prev().find("td:not(.year)").css("border", "0");
+  }
+  updateKalendar(d); 
+</script>
+</html>
