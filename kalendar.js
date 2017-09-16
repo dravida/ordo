@@ -10,7 +10,7 @@ function diffDays(date2, date1) {
   return(Math.round(date2 - date1)/(24 * 60 * 60 * 1000));
 }
 
-// returns the roman numeral; limited to a few thousand?
+// returns the roman numeral
 function roman_numeral(n) {
   var r = { "M": 1000, "CM": 900, "D": 500, "CD": 400, "C":100, "XC":90,
             "L": 50, "XL":40, "X":10, "IX":9, "V":5, "IV":4, "I":1 };
@@ -75,8 +75,6 @@ var Kalendar = {
   }
 }
 
-// TODO: Sunday within the Octave of the Body of Christ...
-// Better ways to do octaves in general??
 // TODO: Saturday Office of the B.V.M.
 var KalendarYear = {
   setup(year) {
@@ -93,6 +91,7 @@ var KalendarYear = {
     }
     this.addSundaysAfterEpiphany();
     this.addSundaysAfterTrinity();
+    this.determinePrecedence();
   },
   addDate(m, d, name) {
     this.addAtPosition(m - 1, d - 1, name);
@@ -101,7 +100,7 @@ var KalendarYear = {
     this.addAtPosition(date.getMonth(), date.getDate() - 1, name);
   },
   addAtPosition(mp, dp, name) {
-    if(this.dates[mp][dp] == undefined) {
+    if(!(dp in this.dates[mp])) {
       var o = Object.create(KalendarDate);
       o.setup(name);
       this.dates[mp][dp] = o;
@@ -154,6 +153,7 @@ var KalendarYear = {
   getMoveable(y, name) {
     var m = moveable[name];
     if("basis" in m) {
+      // automatically figure out the right function
       return(addDays(eval("this.get" + m["basis"].substr(0, 1).toUpperCase() + 
                           m["basis"].substr(1))(y), m["diff"]));
     }
@@ -245,10 +245,24 @@ var KalendarYear = {
       }
       mthadd(this, t);
     }
-    // add the Sunday within Octave of the Nativity, Corpus Christi
+    // add the Sundays within Octaves of Ascension, Corpus Christi, and the Nativity
+    this.addOctaveSunday(
+      this.getMoveable(this.year, "The Ascension of Our Lord"), 
+      "the Ascension");
+    this.addOctaveSunday(
+      this.getMoveable(this.year, "The Feast of the Most Holy Body of Christ"), 
+      "Corpus Christi");
     this.addOctaveSunday(new Date(this.year, 11, 25), "the Nativity");
-    this.addOctaveSunday(this.getMoveable(this.year, "The Feast of the Most Holy Body of Christ"), "Corpus Christi");
-    this.addOctaveSunday(this.getMoveable(this.year, "The Ascension of Our Lord"), "the Ascension");
+  },
+  determinePrecedence() {
+    var day_fn = function(o, i) {
+      var d = o.needsTranslation();
+      if(d.length > 1) { console.log(d); }
+    }
+    var month_fn = function(o, i) {
+      o.forEach(day_fn);
+    }
+    this.dates.forEach(month_fn);
   }
 };
 
@@ -301,15 +315,35 @@ var KalendarDate = {
   names() {
     return(this.celes.map(function(c) { return(c.getName()); }));
   },
-  namesWith(valnames) {
-    out = this.celes.map(function(c) {
-      var o = { "name": c.getName() };
-      valnames.map(function(v) { 
-        o[v] = c.getValue(v);
-      });
-      return(o);
-    });
-    return(out); 
+  makeClassTable() {
+    // returns class name to count mapping falling on this day
+    return(
+      this.celes.
+        map(function(o) { return(o.getValueAsString("class")); }).
+        reduce(
+          function(a, c) {
+            // if the class has been seen... 
+            if(!(c in a)) {
+              a[c] =+ 1;  // add one to current number of times seen
+            } else {
+              a[c] = 1;   // otherwise initalize it with 1
+            }
+            return(a);
+          }, 
+          {} // empty object as initial value
+        )
+    );
+  },
+  needsTranslation() {
+    // return indexes of Sundays of I or II class and Doubles of the I or II class
+    var r = this.celes.reduce(function(tot, o, i) { 
+      if(/^(Sd1|D1|D2)$/.exec(o.getValueAsString("class"))) {
+        tot.push(o.getName()); //tot.push([o, i]);
+      }
+      return(tot);
+    }, []);
+    console.log(this.makeClassTable());
+    return(r);
   }
 };
 
@@ -324,7 +358,7 @@ var KalendarCelebration = {
     var name = this.getName();
     if(this.cele[valname]) {
       return(this.cele[valname]);
-    } else if(meta[name] == undefined) {
+    } else if(!(name in meta)) {
       console.log(name + " not found in meta");
       return(undefined);
     } else {

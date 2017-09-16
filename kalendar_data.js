@@ -22,7 +22,7 @@ var ranknames = {
   "S": "Simple", 
   "iv": "Feria",
   "Comm": "Commemoration", 
-  "M": "Martyrology" 
+  "M": "Memorial"
 }
 
 var moveable = {
@@ -264,11 +264,9 @@ var fixed = {
   "St. Columba of Iona, Abbot": { "m":  6, "d":  9 }, 
   "Ss. Primus & Felician, Martyrs": { "m":  6, "d":  9 }, 
   "St. Margaret of Scotland, Queen & Widow": { "m":  6, "d": 10 }, 
-  "The Feast of the Most Holy Trinity": { "m":  6, "d": 11 }, 
   "St. Barnabas, Apostle": { "m":  6, "d": 11 }, 
   "Ss. Basilides, Cyrinus, Nabor & Nazarius, Martyrs": { "m":  6, "d": 12 }, 
   "St. Basil the Great, Bishop, Confessor & Doctor": { "m":  6, "d": 14 }, 
-  "The Feast of the Most Holy Body of Christ": { "m":  6, "d": 15 }, 
   "Ss. Vitus, Modestus & Crescentia, Martyrs": { "m":  6, "d": 15 }, 
   "St. Ephrem the Syrian, Deacon, Confessor & Doctor": { "m":  6, "d": 18 }, 
   "Ss. Mark & Marcellianus, Martyrs": { "m":  6, "d": 18 }, 
@@ -412,7 +410,7 @@ var fixed = {
   "St. Mark of Rome, Bishop & Confessor": { "m": 10, "d":  7 }, 
   "Ss. Sergius, Bacchus, Marcellus & Apuleius, Martyrs": { "m": 10, "d":  7 }, 
   "Ss. Denys, Rusticus & Eleutherius, Martyrs": { "m": 10, "d":  9 }, 
-  "Motherhood of The B.V.M.": { "m": 10, "d": 11 }, 
+  "Motherhood of the B.V.M.": { "m": 10, "d": 11 }, 
   "St. Wilfrid, Bishop & Confessor": { "m": 10, "d": 12 }, 
   "St. Edward, King & Confessor": { "m": 10, "d": 13 }, 
   "St. Callistus, Bishop & Martyr": { "m": 10, "d": 14 }, 
