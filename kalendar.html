@@ -13,8 +13,7 @@
   <script src="js/jquery-2.2.4.min.js"></script>
   <script>
     var d = new Date();
-    var k = Object.create(Kalendar);
-    k.setup(d.getFullYear());
+    var k = new Kalendar(d.getFullYear()); 
     updateKalendar(d); 
   </script>
 </html>

@@ -45,11 +45,11 @@ function roman_numeral(n) {
   return rn;
 }
 
-class Kalendar {
+class Kalendar_old {
   // y is the "base year" - others added as needed
   constructor(y) {
     this.k = {};
-    var o = new KalendarYear(y);
+    var o = new Kalendar_oldYear(y);
     this.k[y] = o;    
   }
 
@@ -57,7 +57,7 @@ class Kalendar {
     var m = moveable[name];
     if("basis" in m) {
       // automatically figure out the right function
-      return(addDays(eval("Kalendar.get" + m["basis"].substr(0, 1).toUpperCase() + 
+      return(addDays(eval("Kalendar_old.get" + m["basis"].substr(0, 1).toUpperCase() + 
                           m["basis"].substr(1))(y), m["diff"]));
     }
   }
@@ -80,19 +80,19 @@ class Kalendar {
   }
 
   static getFirstSundayInEpiphany(y) {
-    return(Kalendar.findNextSunday(Kalendar.getEpiphany(y)));
+    return(Kalendar_old.findNextSunday(Kalendar_old.getEpiphany(y)));
   }
 
   static getSeptuagesima(y) {
-    return(Kalendar.getMoveable(y, "The Sunday of Septuagesima"));
+    return(Kalendar_old.getMoveable(y, "The Sunday of Septuagesima"));
   }
 
   static getAshWednesday(y) {
-    return(Kalendar.getMoveable(y, "Ash Wednesday"));
+    return(Kalendar_old.getMoveable(y, "Ash Wednesday"));
   }
 
   static getHolySaturday(y) {
-    return(Kalendar.getMoveable(y, "Holy Saturday"));
+    return(Kalendar_old.getMoveable(y, "Holy Saturday"));
   }
 
   static getEaster(y) {
@@ -114,7 +114,7 @@ class Kalendar {
   }
 
   static getTrinity(y) {
-    return(Kalendar.getMoveable(y, "The Feast of the Most Holy Trinity"));
+    return(Kalendar_old.getMoveable(y, "The Feast of the Most Holy Trinity"));
   }
 
   static getTheKing(y) {
@@ -134,19 +134,19 @@ class Kalendar {
   }
 
   static sundaysInEpiphany(y) {
-    var s = Kalendar.getSeptuagesima(y);
-    var ei = Kalendar.getFirstSundayInEpiphany(y);
+    var s = Kalendar_old.getSeptuagesima(y);
+    var ei = Kalendar_old.getFirstSundayInEpiphany(y);
     return(diffWeeks(s, ei)); 
   }
 
   static sundaysInPentecost(y) {
-    return(diffWeeks(Kalendar.getAdvent(y), Kalendar.getTrinity(y))); 
+    return(diffWeeks(Kalendar_old.getAdvent(y), Kalendar_old.getTrinity(y))); 
   }
 
   getDate(date) {
     var y = date.getFullYear();
     if(!(y in this.k)) { 
-      var o = new KalendarYear(y);
+      var o = new Kalendar_oldYear(y);
       this.k[y] = o;
     }
     var out = this.k[y].getDate(date);
@@ -161,14 +161,14 @@ class Kalendar {
   isFast(date) {
     // Mon, Wed, Fri in Advent
     var dow = date.getDay();
-    if(date > Kalendar.getAdvent(date.getFullYear()) &&
+    if(date > Kalendar_old.getAdvent(date.getFullYear()) &&
        date < new Date(date.getFullYear(), 11, 25) &&
        (dow == 1 || dow == 3 || dow == 5)) {
       return(true);
     }
     // All days in Lent except Sundays
-    if(date >= Kalendar.getAshWednesday(date.getFullYear()) &&
-       date <= Kalendar.getHolySaturday(date.getFullYear()) &&
+    if(date >= Kalendar_old.getAshWednesday(date.getFullYear()) &&
+       date <= Kalendar_old.getHolySaturday(date.getFullYear()) &&
        dow != 0) {
       return(true);
     }
@@ -187,7 +187,7 @@ class Kalendar {
   }
 }
 
-class KalendarYear {
+class Kalendar_oldYear {
 
   constructor(year) {
     this.year = year;
@@ -197,7 +197,7 @@ class KalendarYear {
     this.toTranslate = []; 
     // initialize the calendar
     for (var m in moveable) {
-      var d = Kalendar.getMoveable(year, m);
+      var d = Kalendar_old.getMoveable(year, m);
       this.addDate2(d, m);
     }
     for (var f in fixed) {
@@ -221,7 +221,7 @@ class KalendarYear {
 
   addAtPosition(mp, dp, name) {
     if(!(dp in this.dates[mp])) {
-      var o = new KalendarDate(name);
+      var o = new Kalendar_oldDate(name);
       var r = o.getCelebrations()[0];
       this.dates[mp][dp] = o;
       return r;
@@ -236,7 +236,7 @@ class KalendarYear {
     }
     var out = this.dates[date.getMonth()][date.getDate() - 1];
     if(out == undefined) { 
-      var o = new KalendarDate("");
+      var o = new Kalendar_oldDate("");
       this.dates[date.getMonth()][date.getDate() - 1] = o;
       return(o); 
     } else {
@@ -258,7 +258,7 @@ class KalendarYear {
   }
 
   addOctaveSunday(date, octavename) {    
-    var odate = Kalendar.findNextSunday(date);
+    var odate = Kalendar_old.findNextSunday(date);
     if(odate.getFullYear() == this.year) { // necessary because for Nativity Octave may be outside this year
       var odateobj = this.getDate(odate);
       var i = odateobj.removeMatch(/within[\d\D]+octave/i);
@@ -293,8 +293,8 @@ class KalendarYear {
   }
 
   addSundaysAfterEpiphany() {
-    var s = Kalendar.getSeptuagesima(this.year); 
-    var ei = Kalendar.getFirstSundayInEpiphany(this.year);
+    var s = Kalendar_old.getSeptuagesima(this.year); 
+    var ei = Kalendar_old.getFirstSundayInEpiphany(this.year);
     var eo = this.findDate("Octave Day of the Epiphany");
     var suffix = " Sunday after the Epiphany"
     var n; // to keep the Sunday number
@@ -311,7 +311,7 @@ class KalendarYear {
       this.addSunday(ei, roman_numeral(++n) + suffix, "Sd2");
     }
 
-    var w = Kalendar.sundaysInEpiphany(this.year);  
+    var w = Kalendar_old.sundaysInEpiphany(this.year);  
     var p = 23; // if 7 or less Sundays in Epiphany can leave this at 23rd Sun
     if(w == 8) {
       p = 22; // if 8 start at the 22nd
@@ -330,9 +330,9 @@ class KalendarYear {
 
   // TODO: there can be 21 weeks in Pentecost in Orthodox Reckoning... what to do there??
   addSundaysAfterTrinity() {
-    var t = Kalendar.getTrinity(this.year);
-    var a = Kalendar.getAdvent(this.year);
-    var w = Kalendar.sundaysInPentecost(this.year);
+    var t = Kalendar_old.getTrinity(this.year);
+    var a = Kalendar_old.getAdvent(this.year);
+    var w = Kalendar_old.sundaysInPentecost(this.year);
 
     var nepi = (w - 24); // number of Epiphany Sundays resumed
     var esun = 6 - (w - 25); // which one to start with
@@ -384,11 +384,11 @@ class KalendarYear {
 
     this.addSunday(sunnxt, "XXIV and Last Sunday after Pentecost [Sunday Next Before Advent]");
     mthadd(this, sunnxt);
-    var k = this.addDate2(Kalendar.getTheKing(this.year), "The Feast of Our Lord Jesus Christ the King");
+    var k = this.addDate2(Kalendar_old.getTheKing(this.year), "The Feast of Our Lord Jesus Christ the King");
     k.klass = "D1";
     k.obligation = true;
 
-    var wepi = Kalendar.sundaysInEpiphany(this.year);
+    var wepi = Kalendar_old.sundaysInEpiphany(this.year);
     // are there left over Sundays?
     var osun = w + wepi;
     if(osun > 30) alert("Unexpected error: more than 30 Epiphany + Pentecost Sundays");
@@ -396,7 +396,7 @@ class KalendarYear {
     if(osun == 29) {
       // yes, are they from Epiphany or Pentecost?
       if(wepi < 6) {
-        this.addSunday(subDay(Kalendar.getSeptuagesima(this.year)), "Office of the " + roman_numeral(wepi + 1) + " Sunday After Epiphany");
+        this.addSunday(subDay(Kalendar_old.getSeptuagesima(this.year)), "Office of the " + roman_numeral(wepi + 1) + " Sunday After Epiphany");
       } else {
         this.addSunday(subDay(sunnxt), "Office of the " + roman_numeral(w) + " Sunday After Pentecost [" + roman_numeral(w - 1) + " Trinity]");
       }
@@ -404,10 +404,10 @@ class KalendarYear {
 
     // add the Sundays within Octaves of Ascension, Corpus Christi, and the Nativity
     this.addOctaveSunday(
-      Kalendar.getMoveable(this.year, "The Ascension of Our Lord"), 
+      Kalendar_old.getMoveable(this.year, "The Ascension of Our Lord"), 
       "the Ascension");
     this.addOctaveSunday(
-      Kalendar.getMoveable(this.year, "The Feast of the Most Holy Body of Christ"), 
+      Kalendar_old.getMoveable(this.year, "The Feast of the Most Holy Body of Christ"), 
       "Corpus Christi");
     this.addOctaveSunday(new Date(this.year, 11, 25), "the Nativity", "DiO3");
     // for this calendar year also check the Octave of the previous Christmas
@@ -480,9 +480,9 @@ class KalendarYear {
     var nye = new Date(this.year, 11, 31);
     while(sat < nye) {
       var topRank = this.getDate(sat).getCelebrations()[0].klass;
-      if((!(sat > Kalendar.getSeptuagesima(this.year) &&
-            sat < Kalendar.getEaster(this.year))) &&
-         (!(sat > Kalendar.getAdvent(this.year) &&
+      if((!(sat > Kalendar_old.getSeptuagesima(this.year) &&
+            sat < Kalendar_old.getEaster(this.year))) &&
+         (!(sat > Kalendar_old.getAdvent(this.year) &&
           sat < new Date(this.year, 11, 25))) && 
          // include Sundays because they can be anticipated
          ["Sd1", "Sd2", "Sd3", "D1", "D2", "Gd", "D", "V1", "V2", "V", "F2",
@@ -497,8 +497,8 @@ class KalendarYear {
   }
 
   addFerias() {
-    var start = Kalendar.getSeptuagesima(this.year);
-    var end = Kalendar.getAshWednesday(this.year);
+    var start = Kalendar_old.getSeptuagesima(this.year);
+    var end = Kalendar_old.getAshWednesday(this.year);
     var d = start;
     while(d < end) {
       if(!this.isSunday(d)) {
@@ -507,7 +507,7 @@ class KalendarYear {
       }
       d = addDay(d);
     }
-    var start = Kalendar.getAdvent(this.year);
+    var start = Kalendar_old.getAdvent(this.year);
     var end = new Date(this.year, 11, 24);
     var d = start;
     while(d < end) {
@@ -567,7 +567,7 @@ class KalendarYear {
   }
 };
 
-class KalendarDate {
+class Kalendar_oldDate {
 
   constructor(name) {
     this.celes = [];
@@ -613,7 +613,7 @@ class KalendarDate {
     return(this.celes.some(c => c.getValue(valname) == value));
   }
   push(name) {
-    var o = new KalendarCelebration(name);
+    var o = new Kalendar_oldCelebration(name);
     this.celes.push(o);
     return(o);
   }
@@ -759,7 +759,7 @@ class KalendarDate {
   }
 };
 
-class KalendarCelebration {
+class Kalendar_oldCelebration {
   
   constructor(name) {
     this._name = name;

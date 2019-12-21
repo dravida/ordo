@@ -25,15 +25,15 @@ function updateKalendar(d) {
           "<tr" +
             (d.getDay() == 0 & i == 0 ? " style='font-weight: 700;'>" : ">") +
             "<td style='width: 1em'>" +
-            (c.isObligation() ? "<span class='obligation' title='Day of Obligation'>†</span>" : "") + 
-            (c.isDevotion() ? "<span class='devotion' title='Day of Devotion'>‡</span>" : "") + 
+            (c.obligation ? "<span class='obligation' title='Day of Obligation'>†</span>" : "") + 
+            (c.devotion ? "<span class='devotion' title='Day of Devotion'>‡</span>" : "") + 
             "</td><td>" +
-            (c.getValueAsString("nothing") == "y" ? "<span style='color: gray; text-decoration: line-through;'>" : "") +
-            (d.getDay() == 0 & i == 0 ? c.getName().toUpperCase() : c.getName()) +
-            (c.getValueAsString("transferred") == "y" ? " (transferred)" : "") + 
-            (c.getValueAsString("nothing") == "y" ? "</span>" : "") +
+            (c.nothing ? "<span style='color: gray; text-decoration: line-through;'>" : "") +
+            (d.getDay() == 0 & i == 0 ? c.name.toUpperCase() : c.name) +
+            (c.transferred ? " (transferred)" : "") + 
+            (c.nothing ? "</span>" : "") +
             "</td><td align='right' style='width: 3em'>" +
-            makeClassSpan(c.getOffice()) +
+            makeClassSpan(c.office) +
             "</td></tr>");
       }
     );      
