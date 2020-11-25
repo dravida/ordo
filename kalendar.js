@@ -170,6 +170,8 @@ class KalendarYear {
     this.determineAnticipation();
     this.addSatOfficeOfBVM();
     this.determinePrecedence();
+    this.specialDemotions();
+    this.removeOctaves();
   }
 
   addHolyName(y) {
@@ -257,21 +259,6 @@ class KalendarYear {
     }
   }
 
-  addHolyFamily(date, anticipated) {
-    var d;
-    if(!anticipated) {
-      d = this.addDate2(date, "The Holy Family: Mary, Jesus & Joseph");
-      d.klass = "Sd1";
-    } else {
-      d = this.addDate2(date, "Feast of the Holy Family (anticipated)");
-      d.klass = "Sd1";
-      var d2 = this.addDate2(date, "Sunday within the Octave of the Epiphany");
-      d2.klass = "Sd";
-    }
-    d.office = "Gd";
-    d.obligation = true;
-  }
-
   addSunday(date, name, cls) {
     cls = typeof cls !== 'undefined' ? cls : "Sd3"; // default parameter
     var d = this.addDate2(date, name);
@@ -285,19 +272,22 @@ class KalendarYear {
     var ei = Kalendar.getFirstSundayInEpiphany(this.year);
     var eo = this.findDate("Octave Day of the Epiphany");
     var suffix = " Sunday after the Epiphany"
-    var n; // to keep the Sunday number
+    var n = 1; // to keep the Sunday number
+
+    // handle Vigil of Epiphany?
+    // MD p. 221 - Jan 2, 3, or 4 is a Sunday then that's when the Office of the
+    // Vigil of the Epiphany is done
 
     // if the Octave Day of Epiphany is on Sunday, 
-    // anticpate Holy Family GR IV.2
+    // anticpate Sunday within MD p. 228; 
     if(eo.getDay() == 0) {  
-      this.addHolyFamily(addDays(ei, -1), true);
-      n = 1;
-      // skip adding I Epiphany (TODO: for ordo, mass is celebrated on Wednesday)
+      var d2 = this.addDate2(addDays(ei, -1), "Sunday within the Octave of the Epiphany (anticipated)");
     } else {
-      this.addHolyFamily(ei, false);
-      n = 0;
-      this.addSunday(ei, romanNumeral(++n) + suffix, "Sd2");
+      var d2 = this.addDate2(ei, "Sunday within the Octave of the Epiphany");
+      d2.obligation = true;
     }
+    d2.klass = "Sd1";
+    d2.office = "Sd";
 
     var w = Kalendar.sundaysInEpiphany(this.year);  
     var p = 23; // if 7 or less Sundays in Epiphany can leave this at 23rd Sun
@@ -464,6 +454,55 @@ class KalendarYear {
     }
   }
 
+  specialDemotions() {
+    // All Feasts of Major Double [Gd], or lower Rite, 
+    // are entirely omitted on Easter Sunday and on the Monday and Tuesday of Easter Week.
+    // -- From Matters Liturgical, #613
+    var demote = [ "Gd", "iv", "D", "Sd", "F2b", 
+                 "DiO3", "DiOC", "Comm", "F3", "V", "ODS", "BVM",
+                  "M", " " ]; // from ranksorter
+    var d = Kalendar.getEaster(this.year)
+    var e = addDays(Kalendar.getEaster(this.year), 3)
+    while(d < e) {
+      var o = this.getDate(d);
+      o.getCelebrations().map(c => { if(demote.indexOf(c.klass) != -1 &&
+                                        c.name != "The Greater Litanies") { c.nothing = true; }})
+      d = addDay(d);
+    }
+  }
+
+  removeOctaves() {
+    // no octaves during Lent through Tuesday of Holy Week
+    var d = Kalendar.getAshWednesday(this.year)
+    var e = addDays(Kalendar.getEaster(this.year), 3)
+    const v = ["ODC", "ODS", "DiOC"];
+      
+    var rmoct = function(d, e, k) {
+      while(d < e) {
+        var o = k.getDate(d);
+        o.getCelebrations().map(c => { 
+          if (v.indexOf(c.klass) != -1 || 
+              (c.nothing && c.name.includes("Octave"))) 
+            { o.removeMatch(c.name); }
+          }
+        );
+        d = addDay(d);
+      }
+    }
+
+    rmoct(d, e, this);
+
+    // remove Pentecost Octaves
+    d = addDays(Kalendar.getTrinity(this.year), -7);
+    e = addDays(e, 9);
+    rmoct(d, e, this);
+
+    // remove Nativity Octaves
+    d = new Date(this.year, 11, 17);
+    e = new Date(this.year, 11, 26);
+    rmoct(d, e, this);
+  }
+
   addSatOfficeOfBVM() {
     // find first Saturday of the year
     var nyd = new Date(this.year, 0, 1);
@@ -511,12 +550,17 @@ class KalendarYear {
   }
   
   addGreaterLitanies() {
-    var e = Kalendar.getEaster(this.year)
-    // if Easter falls on April 25 transfer 
-    // to the next Tuesday
+    // Following a precedent from a 19th century Ordo, 
+    // Fr Ed has approved moving the Greater Litanies to the Tuesday after Easter. 
+    // (The MD rubric does not assume the Julian calendar with its idiosyncrasies.)
+ 
+    // MD rubric is if Easter falls on April 25 transfer 
+    // to the next Tuesday; based on above am transferring if Palm Sunday onwards
+    var e = Kalendar.getEaster(this.year);
+    var ps = addDays(e, -7);
     var d = new Date(this.year, 3, 25);
-    if (e.getMonth() == 2 && e.getDate() == 25) {
-      addDays(d, 2);
+    if (d >= ps && d < addDays(e, 2)) {
+      d = addDays(e, 2);
     } 
     this.addDate2(d, "The Greater Litanies");
   }
@@ -568,6 +612,8 @@ class KalendarYear {
     }
   }
 };
+
+
 
 class KalendarDate {
 
