@@ -1,0 +1,3680 @@
+{
+  "": {
+    "class": " "
+  },
+  "(Octave Day of the Nativity)": {
+    "class": "Comm",
+    "office": "&nbsp;",
+    "feast": "The Nativity of Our Lord"
+  },
+  "(Baptism of Our Lord)": {
+    "class": "Comm",
+    "office": "&nbsp;"
+  },
+  "(All Souls’ Day)": {
+    "class": "Comm",
+    "office": "&nbsp;"
+  },
+  "The Circumcision of Our Lord": {
+    "class": "D2",
+    "octave": "N",
+    "obligation": "y",
+    "devotion": "n",
+    "secondary": "n",
+    "rank": 1
+  },
+  "Most Holy Name of Jesus": {
+    "class": "D2",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "y",
+    "rank": 23
+  },
+  "St. Titus, Bishop & Confessor": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "The Vigil of the Epiphany": {
+    "class": "V2",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. Telesphorus of Rome, Bishop & Martyr": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "The Epiphany of Our Lord": {
+    "class": "D1",
+    "octave": "2",
+    "obligation": "y",
+    "devotion": "n",
+    "secondary": "n",
+    "rank": 2
+  },
+  "Day II within the Octave of the Epiphany": {
+    "class": "DiO2",
+    "office": "Sd",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n",
+    "feast": "The Epiphany of Our Lord"
+  },
+  "Day III within the Octave of the Epiphany": {
+    "class": "DiO2",
+    "office": "Sd",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n",
+    "feast": "The Epiphany of Our Lord"
+  },
+  "Day IV within the Octave of the Epiphany": {
+    "class": "DiO2",
+    "office": "Sd",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n",
+    "feast": "The Epiphany of Our Lord"
+  },
+  "Day V within the Octave of the Epiphany": {
+    "class": "DiO2",
+    "office": "Sd",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n",
+    "feast": "The Epiphany of Our Lord"
+  },
+  "St. Paul the First Hermit": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Day VI within the Octave of the Epiphany": {
+    "class": "DiO2",
+    "office": "Sd",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n",
+    "feast": "The Epiphany of Our Lord"
+  },
+  "St. Hyginus of Rome, Bishop & Martyr": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Day VII within the Octave of the Epiphany": {
+    "class": "DiO2",
+    "office": "Sd",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n",
+    "feast": "The Epiphany of Our Lord"
+  },
+  "St. Benedict Biscop, Abbot": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Octave Day of the Epiphany": {
+    "class": "OD2",
+    "office": "Gd",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n",
+    "feast": "The Epiphany of Our Lord"
+  },
+  "St. Hilary, Bishop, Confessor & Doctor": {
+    "class": "D",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. Felix of Nola, Priest & Martyr": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. Maurus, Abbot": {
+    "class": "Gd",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. Marcellus of Rome, Bishop & Martyr": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. Anthony, Abbot": {
+    "class": "D",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Chair of St. Peter in Rome": {
+    "class": "Gd",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "y",
+    "rank": 17
+  },
+  "Commemoration of St. Paul": {
+    "class": "Comm",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. Prisca of Rome, Virgin Martyr": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Ss. Marius, Martha, Audifax, & Abachum, Martyrs": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. Mark of Ephesus, Bishop & Confessor": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Ss. Fabian (Bishop) & Sebastian, Martyrs": {
+    "class": "D",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. Agnes of Rome, Virgin & Martyr": {
+    "class": "Gd",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n",
+    "rank": 12
+  },
+  "Ss. Vincent (Deacon) & Anastasius, Martyrs": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. Emerentiana, Virgin & Martyr": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. Timothy, Bishop & Martyr": {
+    "class": "D",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "The Conversion Of St. Paul The Apostle": {
+    "class": "Gd",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "y",
+    "rank": 18
+  },
+  "Commemoration of St. Peter": {
+    "class": "Comm",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. Polycarp of Smyrna, Bishop & Martyr": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. John Chrysostom, Bishop, Confessor & Doctor": {
+    "class": "D",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. Cyril of Alexandria, Bishop, Confessor, & Doctor": {
+    "class": "D",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "The Second Feast of St. Agnes, Virgin Martyr": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. Martina, Virgin & Martyr": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. Ignatius of Antioch, Bishop & Martyr": {
+    "class": "D",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. Bridget of Ireland, Virgin": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Purification of the B.V.M.": {
+    "class": "D2",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "y",
+    "secondary": "n",
+    "rank": 4
+  },
+  "St. Blaise, Bishop & Martyr": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "The New Martyrs of Russia": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n",
+    "rank": 1001
+  },
+  "St. Joseph of Aleppo, Martyr": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n",
+    "rank": 1000
+  },
+  "St. Agatha, Virgin & Martyr, Abbot": {
+    "class": "Gd",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n",
+    "rank": 13
+  },
+  "St. Dorothy, Virgin & Martyr": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. Romuald, Abbot": {
+    "class": "D",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. Apollonia of Alexandria, Virgin & Martyr": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. Scholastica, Virgin": {
+    "class": "D2",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Septuagesima Sunday": {
+    "class": "Sd2",
+    "octave": "N",
+    "obligation": "y",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. Gregory II, Bishop & Martyr": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. Valentine, Priest & Martyr": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Ss. Faustinus & Jovita, Martyrs": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. Simeon of Jerusalem, Bishop & Martyr": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Sexagesima Sunday": {
+    "class": "Sd2",
+    "octave": "N",
+    "obligation": "y",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Chair of St. Peter at Antioch": {
+    "class": "D2",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "y",
+    "rank": 27
+  },
+  "Commemoration of Feria": {
+    "class": "F3",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. Peter Damian, Bishop, Confessor & Doctor": {
+    "class": "D",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Vigil of St. Matthias": {
+    "class": "V",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. Matthias, Apostle": {
+    "class": "D2",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n",
+    "rank": 10
+  },
+  "St. Walburga of Heidenheim, Virgin": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Quinquagesima Sunday": {
+    "class": "Sd2",
+    "octave": "N",
+    "obligation": "y",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. Raphael of Brooklyn, Bishop & Confessor": {
+    "class": "Gd",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n",
+    "rank": 26
+  },
+  "St. Alexander of Alexandria, Bishop & Confessor": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Ash Wednesday": {
+    "class": "F1",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. David of Wales, Bishop & Confessor": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Thursday after Ash Wednesday": {
+    "class": "F2",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. Chad, Bishop & Confessor": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. Lucius I, Bishop & Martyr": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Friday after Ash Wednesday": {
+    "class": "F2",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Saturday after Ash Wednesday": {
+    "class": "F2",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "I Sunday in Lent": {
+    "class": "Sd1",
+    "octave": "N",
+    "obligation": "y",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Monday after Lent I": {
+    "class": "F2",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Ss. Perpetua & Felicitas, Martyrs": {
+    "class": "D",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Tuesday after Lent I": {
+    "class": "F2",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Ember Wednesday in Lent": {
+    "class": "F2",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Thursday after Lent I": {
+    "class": "F2",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. Gregory of Nyssa, Bishop, Confessor & Doctor": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Ember Friday in Lent": {
+    "class": "F2",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "The Forty Holy Martyrs": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Ember Saturday in Lent": {
+    "class": "F2",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "II Sunday in Lent": {
+    "class": "Sd1",
+    "octave": "N",
+    "obligation": "y",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. Gregory the Great, Bishop, Confessor & Doctor": {
+    "class": "D2",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Monday after Lent II": {
+    "class": "F2",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Tuesday after Lent II": {
+    "class": "F2",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Wednesday after Lent II": {
+    "class": "F2",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Thursday after Lent II": {
+    "class": "F2",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Friday after Lent II": {
+    "class": "F2",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. Patrick, Bishop & Confessor": {
+    "class": "D",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. Joseph of Arimathea, Confessor": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Saturday after Lent II": {
+    "class": "F2",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. Cyril of Jerusalem, Bishop, Confessor & Doctor": {
+    "class": "D",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. Edward, King & Martyr": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. Joseph, Spouse of the B.V.M.": {
+    "class": "D1",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n",
+    "rank": 19
+  },
+  "III Sunday in Lent": {
+    "class": "Sd1",
+    "octave": "N",
+    "obligation": "y",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. Cuthbert, Bishop & Confessor": {
+    "class": "D",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Monday after Lent III": {
+    "class": "F2",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Tuesday after Lent III": {
+    "class": "F2",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. Benedict, Abbot": {
+    "class": "D1",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Wednesday after Lent III": {
+    "class": "F2",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Thursday after Lent III": {
+    "class": "F2",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Friday after Lent III": {
+    "class": "F2",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Saturday after Lent III": {
+    "class": "F2",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. Gabriel the Archangel": {
+    "class": "Gd",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "The Annunciation of the B.V.M.": {
+    "class": "D1",
+    "octave": "N",
+    "obligation": "y",
+    "devotion": "n",
+    "secondary": "n",
+    "rank": 15
+  },
+  "IV Sunday in Lent": {
+    "class": "Sd1",
+    "octave": "N",
+    "obligation": "y",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Monday after Lent IV": {
+    "class": "F2",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. John Damascene, Confessor & Doctor": {
+    "class": "D",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Tuesday after Lent IV": {
+    "class": "F2",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Wednesday after Lent IV": {
+    "class": "F2",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Thursday after Lent IV": {
+    "class": "F2",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. John Climacus, Abbot": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Friday after Lent IV": {
+    "class": "F2",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. Innocent of Alaska, Bishop & Confessor": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Saturday after Lent IV": {
+    "class": "F2",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Sunday of the Passion": {
+    "class": "Sd1",
+    "octave": "N",
+    "obligation": "y",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Monday after Passion Sunday": {
+    "class": "F2",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Tuesday after Passion Sunday": {
+    "class": "F2",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. Isidore of Seville, Bishop, Confessor & Doctor": {
+    "class": "D",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Wednesday after Passion Sunday": {
+    "class": "F2",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Thursday after Passion Sunday": {
+    "class": "F2",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. Tikhon of Moscow, Bishop & Confessor": {
+    "class": "D1",
+    "octave": "C",
+    "obligation": "n",
+    "devotion": "y",
+    "secondary": "n",
+    "rank": 28
+  },
+  "Day II within the Octave of St. Tikhon": {
+    "class": "DiOC",
+    "office": "Sd",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n",
+    "feast": "St. Tikhon of Moscow, Bishop & Confessor"
+  },
+  "Day III within the Octave of St. Tikhon": {
+    "class": "DiOC",
+    "office": "Sd",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n",
+    "feast": "St. Tikhon of Moscow, Bishop & Confessor"
+  },
+  "Day IV within the Octave of St. Tikhon": {
+    "class": "DiOC",
+    "office": "Sd",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n",
+    "feast": "St. Tikhon of Moscow, Bishop & Confessor"
+  },
+  "Day V within the Octave of St. Tikhon": {
+    "class": "DiOC",
+    "office": "Sd",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n",
+    "feast": "St. Tikhon of Moscow, Bishop & Confessor"
+  },
+  "Day VI within the Octave of St. Tikhon": {
+    "class": "DiOC",
+    "office": "Sd",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n",
+    "feast": "St. Tikhon of Moscow, Bishop & Confessor"
+  },
+  "Day VII within the Octave of St. Tikhon": {
+    "class": "DiOC",
+    "office": "Sd",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n",
+    "feast": "St. Tikhon of Moscow, Bishop & Confessor"
+  },
+  "Octave of St. Tikhon": {
+    "class": "ODC",
+    "office": "Gd",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n",
+    "feast": "St. Tikhon of Moscow, Bishop & Confessor"
+  },
+  "Friday after Passion Sunday": {
+    "class": "F2",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Our Lady of Sorrows": {
+    "class": "Gd",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Saturday after Passion Sunday": {
+    "class": "F2",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Palm Sunday": {
+    "class": "Sd1",
+    "octave": "N",
+    "obligation": "y",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Monday in Holy Week": {
+    "class": "F1",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Tuesday in Holy Week": {
+    "class": "F1",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. Leo the Great, Bishop, Confessor & Doctor": {
+    "class": "D",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Wednesday in Holy Week": {
+    "class": "F1",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Thursday of the Lord’s Supper": {
+    "class": "D1",
+    "octave": "N",
+    "obligation": "y",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. Hermengild, Martyr": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Friday of the Preparation (Good Friday)": {
+    "class": "D1",
+    "octave": "N",
+    "obligation": "y",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. Justin, Martyr": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. Tiburtius, Valerian & Maximus, Martyrs": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Holy Saturday": {
+    "class": "D1",
+    "octave": "N",
+    "obligation": "y",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Sunday of the Resurrection (Easter)": {
+    "class": "D1",
+    "octave": "1",
+    "obligation": "y",
+    "devotion": "n",
+    "secondary": "n",
+    "rank": 3
+  },
+  "Monday in the Octave of Easter": {
+    "class": "D1",
+    "office": "D1",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n",
+    "rank": 4
+  },
+  "St. Anicetus, Bishop & Martyr": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Tuesday in the Octave of Easter": {
+    "class": "D1",
+    "office": "D1",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n",
+    "rank": 4
+  },
+  "Wednesday in the Octave of Easter": {
+    "class": "DiO1",
+    "office": "D",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Thursday in the Octave of Easter": {
+    "class": "DiO1",
+    "office": "D",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Friday in the Octave of Easter": {
+    "class": "DiO1",
+    "office": "Sd",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Saturday in the Octave of Easter (Sabbato in Albis)": {
+    "class": "DiO1",
+    "office": "D",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Ss. Soter & Caius, Martyrs": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. George, Martyr": {
+    "class": "D1",
+    "octave": "C",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n",
+    "rank": 27
+  },
+  "The Octave of Easter (Dominica in Albis; Low Sunday)": {
+    "class": "Sd1",
+    "octave": "N",
+    "obligation": "y",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Day II within the Octave of St. George": {
+    "class": "DiOC",
+    "office": "Sd",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n",
+    "feast": "St. George, Martyr"
+  },
+  "St. Mark, Evangelist": {
+    "class": "D2",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n",
+    "rank": 16
+  },
+  "Day III within the Octave of St. George": {
+    "class": "DiOC",
+    "office": "Sd",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n",
+    "feast": "St. George, Martyr"
+  },
+  "Day IV within the Octave of St. George": {
+    "class": "DiOC",
+    "office": "Sd",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n",
+    "feast": "St. George, Martyr"
+  },
+  "St. Cletus & Marcellinus, Martyrs": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Day V within the Octave of St. George": {
+    "class": "DiOC",
+    "office": "Sd",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n",
+    "feast": "St. George, Martyr"
+  },
+  "Day VI within the Octave of St. George": {
+    "class": "DiOC",
+    "office": "Sd",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n",
+    "feast": "St. George, Martyr"
+  },
+  "St. Vitalis, Martyr": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Day VII within the Octave of St. George": {
+    "class": "DiOC",
+    "office": "Sd",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n",
+    "feast": "St. George, Martyr"
+  },
+  "II Sunday after Easter": {
+    "class": "Sd3",
+    "office": "Sd",
+    "octave": "N",
+    "obligation": "y",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Octave Day of St. George": {
+    "class": "ODC",
+    "office": "Gd",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n",
+    "feast": "St. George, Martyr"
+  },
+  "Ss. Philip & James, Apostles": {
+    "class": "D2",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n",
+    "rank": 11
+  },
+  "St. Athanasius, Bishop, Confessor & Doctor": {
+    "class": "D",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Finding of the Holy Cross": {
+    "class": "D2",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "y",
+    "rank": 24
+  },
+  "Solemnity of St. Joseph, Spouse of the B.V.M.": {
+    "class": "D1",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n",
+    "rank": 20
+  },
+  "Octave of the Solmenity of St Joseph": {
+    "class": "ODS",
+    "office": "S",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n",
+    "feast": "Solemnity of St. Joseph, Spouse of the B.V.M."
+  },
+  "Ss. Alexander (Bishop), Eventius, Theodulus (Martyrs) & Juvenalis (Bishop & Confessor)": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. Monica, Widow": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. John before the Latin Gate": {
+    "class": "Gd",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "y",
+    "rank": 19
+  },
+  "III Sunday after Easter": {
+    "class": "Sd3",
+    "office": "Sd",
+    "octave": "N",
+    "obligation": "y",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. Alexis Toth, Priest & Confessor": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "The Apparition of St. Michael the Archangel": {
+    "class": "Gd",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St Boniface IV, Bishop & Confessor": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. Gregory Nazianzen, Bishop, Confessor & Doctor": {
+    "class": "D",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Ss. Gordian & Epimachus, Martyrs": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Ss. Nereus, Achilles, Domitilla & Pancras, Martyrs": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "IV Sunday after Easter": {
+    "class": "Sd3",
+    "office": "Sd",
+    "octave": "N",
+    "obligation": "y",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. Boniface of Tarsus, Martyr": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. Ubald, Bishop & Confessor": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. Venantius, Martyr": {
+    "class": "D",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. Pudentiana, Virgin": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. Romanus, Abbot": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "V Sunday after Easter": {
+    "class": "Sd3",
+    "office": "Sd",
+    "octave": "N",
+    "obligation": "y",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Rogation Monday": {
+    "class": "F2",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Rogation Tuesday": {
+    "class": " ",
+    "office": "Comm",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "The Vigil of the Ascension": {
+    "class": "V",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. Vincent of Lerins, Confessor": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "The Ascension of Our Lord": {
+    "class": "D1",
+    "octave": "3",
+    "obligation": "y",
+    "devotion": "n",
+    "secondary": "n",
+    "rank": 5
+  },
+  "St. Urban, Bishop & Martyr": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Day II within the Octave of the Ascension": {
+    "class": "DiO3",
+    "office": "Sd",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n",
+    "feast": "The Ascension of Our Lord"
+  },
+  "St. Augustine of Canterbury, Bishop & Confessor": {
+    "class": "D",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. Eleutherius, Bishop & Martyr": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Day III within the Octave of the Ascension": {
+    "class": "DiO3",
+    "office": "Sd",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n",
+    "feast": "The Ascension of Our Lord"
+  },
+  "St. Bede the Venerable, Confessor & Doctor": {
+    "class": "D",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. John I, Bishop & Martyr": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "The Sunday within the Octave of the Ascension": {
+    "class": "DiO3",
+    "office": "Sd",
+    "octave": "N",
+    "obligation": "y",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Day IV within the Octave of the Ascension": {
+    "class": "DiO3",
+    "office": "Sd",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n",
+    "feast": "The Ascension of Our Lord"
+  },
+  "Day V within the Octave of the Ascension": {
+    "class": "DiO3",
+    "office": "Sd",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n",
+    "feast": "The Ascension of Our Lord"
+  },
+  "Day VI within the Octave of the Ascension": {
+    "class": "DiO3",
+    "office": "Sd",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n",
+    "feast": "The Ascension of Our Lord"
+  },
+  "St. Felix I, Bishop & Martyr": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Day VII within the Octave of the Ascension": {
+    "class": "DiO3",
+    "office": "Sd",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n",
+    "feast": "The Ascension of Our Lord"
+  },
+  "St. Petronilla, Virgin": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "The Octave of the Ascension": {
+    "class": "OD3",
+    "office": "Gd",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n",
+    "feast": "The Ascension of Our Lord"
+  },
+  "Friday after the Octave of the Ascension": {
+    "class": "F2b",
+    "office": "Sd",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Ss. Marcellinus, Peter & Erasmus, Martyrs": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "The Vigil of Pentecost": {
+    "class": "V1",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Pentecost Sunday": {
+    "class": "D1",
+    "octave": "1",
+    "obligation": "y",
+    "devotion": "n",
+    "secondary": "n",
+    "rank": 6
+  },
+  "Monday within the Octave of Pentecost": {
+    "class": "D1",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n",
+    "rank": 7
+  },
+  "St. Boniface, Bishop & Martyr": {
+    "class": "D",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Tuesday within the Octave of Pentecost": {
+    "class": "D1",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n",
+    "rank": 7
+  },
+  "Ember Wednesday in Pentecost": {
+    "class": "DiO1",
+    "office": "Sd",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Thursday within the Octave of Pentecost": {
+    "class": "DiO1",
+    "office": "Sd",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Ember Friday in Pentecost": {
+    "class": "DiO1",
+    "office": "Sd",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. Columba of Iona, Abbot": {
+    "class": "D",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Ss. Primus & Felician, Martyrs": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Ember Saturday in Pentecost": {
+    "class": "DiO1",
+    "office": "Sd",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. Margaret of Scotland, Queen & Widow": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "The Feast of the Most Holy Trinity": {
+    "class": "D1",
+    "octave": "N",
+    "obligation": "y",
+    "devotion": "n",
+    "secondary": "n",
+    "rank": 10
+  },
+  "I Sunday after Pentecost": {
+    "class": "Sd3",
+    "office": "Sd",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. Barnabas, Apostle": {
+    "class": "Gd",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n",
+    "rank": 6
+  },
+  "Ss. Basilides, Cyrinus, Nabor & Nazarius, Martyrs": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. Basil the Great, Bishop, Confessor & Doctor": {
+    "class": "Gd",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n",
+    "rank": 9
+  },
+  "The Feast of the Most Holy Body of Christ": {
+    "class": "D1",
+    "octave": "2",
+    "obligation": "n",
+    "devotion": "y",
+    "secondary": "n",
+    "rank": 11
+  },
+  "Ss. Vitus, Modestus & Crescentia, Martyrs": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Day II within the Octave of Corpus Christi": {
+    "class": "DiO2",
+    "office": "Sd",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n",
+    "feast": "The Feast of the Most Holy Body of Christ"
+  },
+  "Day III within the Octave of Corpus Christi": {
+    "class": "DiO2",
+    "office": "Sd",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n",
+    "feast": "The Feast of the Most Holy Body of Christ"
+  },
+  "Day IV within the Octave of Corpus Christi": {
+    "class": "DiO2",
+    "office": "Sd",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n",
+    "feast": "The Feast of the Most Holy Body of Christ"
+  },
+  "St. Ephrem the Syrian, Deacon, Confessor & Doctor": {
+    "class": "D",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Ss. Mark & Marcellianus, Martyrs": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Day V within the Octave of Corpus Christi": {
+    "class": "DiO2",
+    "office": "Sd",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n",
+    "feast": "The Feast of the Most Holy Body of Christ"
+  },
+  "Ss. Gervase & Protase, Martyrs": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Day VI within the Octave of Corpus Christi": {
+    "class": "DiO2",
+    "office": "Sd",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n",
+    "feast": "The Feast of the Most Holy Body of Christ"
+  },
+  "The Sunday within the Octave of Corpus Christi": {
+    "class": "DiO2",
+    "office": "Sd",
+    "octave": "N",
+    "obligation": "y",
+    "devotion": "n",
+    "secondary": "n",
+    "feast": "The Feast of the Most Holy Body of Christ"
+  },
+  "St. Silverius, Bishop & Martyr": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Translation of St. Edward, King & Martyr": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Day VII within the Octave of Corpus Christi": {
+    "class": "DiO2",
+    "office": "Sd",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n",
+    "feast": "The Feast of the Most Holy Body of Christ"
+  },
+  "Octave of Corpus Christi": {
+    "class": "OD2",
+    "office": "Gd",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n",
+    "feast": "The Feast of the Most Holy Body of Christ"
+  },
+  "St. Alban, Protomartyr of England": {
+    "class": "D",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. Paulinus, Bishop & Confessor": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Vigil of St. John the Baptist": {
+    "class": "V",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. Etheldreda, Queen & Virgin": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Nativity of St. John the Baptist": {
+    "class": "D1",
+    "octave": "C",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n",
+    "rank": 18
+  },
+  "Day II within the Octave of St. John Baptist": {
+    "class": "DiOC",
+    "office": "Sd",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n",
+    "feast": "Nativity of St. John the Baptist"
+  },
+  "Ss. John & Paul, Martyrs": {
+    "class": "D",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Day III within the Octave of St. John Baptist": {
+    "class": "DiOC",
+    "office": "Sd",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n",
+    "feast": "Nativity of St. John the Baptist"
+  },
+  "Day IV within the Octave of St. John Baptist": {
+    "class": "DiOC",
+    "office": "Sd",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n",
+    "feast": "Nativity of St. John the Baptist"
+  },
+  "St. Irenæus of Lyon, Bishop & Martyr": {
+    "class": "D",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Day V within the Octave of St. John Baptist": {
+    "class": "DiOC",
+    "office": "Sd",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n",
+    "feast": "Nativity of St. John the Baptist"
+  },
+  "Vigil of Ss. Peter & Paul": {
+    "class": "V",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Ss. Peter & Paul, Apostles": {
+    "class": "D1",
+    "octave": "C",
+    "obligation": "n",
+    "devotion": "y",
+    "secondary": "n",
+    "rank": 21
+  },
+  "St. Leo II, Bishop & Confessor": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Day VI within the Octave of St. John Baptist": {
+    "class": "DiOC",
+    "office": "Sd",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n",
+    "feast": "Nativity of St. John the Baptist"
+  },
+  "Commemoration of St. Paul, Apostle": {
+    "class": "Gd",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Commemoration of St. Peter, Apostle": {
+    "class": "Comm",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Day VII within the Octave of St. John Baptist": {
+    "class": "DiOC",
+    "office": "Sd",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n",
+    "feast": "Nativity of St. John the Baptist"
+  },
+  "Octave of St. John Baptist": {
+    "class": "ODC",
+    "office": "Gd",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n",
+    "feast": "Nativity of St. John the Baptist"
+  },
+  "Day II within the Octave of Ss. Peter & Paul": {
+    "class": "DiOC",
+    "office": "Sd",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n",
+    "feast": "Ss. Peter & Paul, Apostles"
+  },
+  "Day III within the Octave of Ss. Peter & Paul": {
+    "class": "DiOC",
+    "office": "Sd",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n",
+    "feast": "Ss. Peter & Paul, Apostles"
+  },
+  "Most Precious Blood of Our Lord Jesus Christ": {
+    "class": "D2",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "y",
+    "rank": 31
+  },
+  "Visitation of the B.V.M.": {
+    "class": "D2",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n",
+    "rank": 5
+  },
+  "Day IV within the Octave of Ss. Peter & Paul": {
+    "class": "DiOC",
+    "office": "Sd",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n",
+    "feast": "Ss. Peter & Paul, Apostles"
+  },
+  "St. John of San Francisco, Bishop & Confessor": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Ss. Processus & Martinian, Martyrs": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Day V within the Octave of Ss. Peter & Paul": {
+    "class": "DiOC",
+    "office": "Sd",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n",
+    "feast": "Ss. Peter & Paul, Apostles"
+  },
+  "Day VI within the Octave of Ss. Peter & Paul": {
+    "class": "DiOC",
+    "office": "Sd",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n",
+    "feast": "Ss. Peter & Paul, Apostles"
+  },
+  "Day VII within the Octave of Ss. Peter & Paul": {
+    "class": "DiOC",
+    "office": "Sd",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n",
+    "feast": "Ss. Peter & Paul, Apostles"
+  },
+  "The Octave of Ss. Peter & Paul": {
+    "class": "ODC",
+    "office": "Gd",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n",
+    "feast": "Ss. Peter & Paul, Apostles"
+  },
+  "Ss. Cyril and Methodius, Bishops & Confessors": {
+    "class": "D",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "The Seven Holy Brothers, with Ss. Rufina & Secunda, Martyrs": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. Joseph of Damascus (Priest) & his companions, Martyrs": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "[Solemnity of St. Benedict (Monastics & Oblates Only)]": {
+    "class": "Gd",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "y"
+  },
+  "St. Pius I, Bishop & Martyr": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Ss. Nabor & Felix, Martyrs": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. Anacletus, Bishop & Martyr": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. Vladimir of Kiev, King & Confessor": {
+    "class": "D",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. Henry, Emperor & Confessor": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Our Lady of Einsiedeln": {
+    "class": "Gd",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. Alexius, Confessor": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. Sergius of Radonezh, Abbot": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. Symphorosa & her seven sons, Martyrs": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. Seraphim of Sarov, Priest & Confessor": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. Elias the Prophet": {
+    "class": "D",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. Margaret of Antioch, Virgin & Martyr": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. Praxedes, Virgin": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. Mary Magdalene, Penitent": {
+    "class": "Gd",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n",
+    "rank": 11
+  },
+  "St. John Cassian, Abbot": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. Apollinaris of Ravenna, Bishop & Martyr": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. Liborius, Bishop & Confessor": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Vigil of St. James": {
+    "class": "V",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. Christina, Virgin & Martyr": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. James, Apostle": {
+    "class": "D2",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n",
+    "rank": 12
+  },
+  "St. Christopher, Martyr": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. Anne, Mother of the B.V.M.": {
+    "class": "D2",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n",
+    "rank": 21
+  },
+  "St. Pantaleon, Martyr": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Ss. Nazarius, Celsus, Martyrs; St. Victor, Bishop & Martyr; & Innocent, Bishop & Confessor": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. Martha of Bethany, Virgin": {
+    "class": "D",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Ss. Felix II (Bishop), Simplicius, Faustinus & Beatrice, Martryrs": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Ss. Abdon & Sennen, Martyrs": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Chains of St. Peter": {
+    "class": "Gd",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n",
+    "rank": 5
+  },
+  "Holy Maccabees, Martyrs": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. Stephen, Bishop & Martyr": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "The Finding of St. Stephen, Protomartyr": {
+    "class": "D",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Dedication of Our Lady of the Snows": {
+    "class": "Gd",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. Oswald, King & Martyr": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "The Transfiguration of Our Lord Jesus Christ": {
+    "class": "D2",
+    "octave": "N",
+    "obligation": "y",
+    "devotion": "n",
+    "secondary": "n",
+    "rank": 2
+  },
+  "Ss. Sixtus II (Bishop & Martyr), Felicissimus & Agapitus (Deacons), Martyrs": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. Donatus, Bishop & Martyr": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "[The Most Holy Name of Jesus]": {
+    "class": "D2",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "y"
+  },
+  "Ss. Cyriacus, Largus & Smaragdus, Martyrs": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Vigil of St. Laurence": {
+    "class": "V",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. Romanus, Martyr": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. Laurence, Deacon & Martyr": {
+    "class": "D2",
+    "octave": "S",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n",
+    "rank": 22
+  },
+  "Ss. Tiburtius & Susanna, Martyrs": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. Maximus of Constantinople, Confessor": {
+    "class": "D",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Ss. Hippolytus & Cassian, Martyrs": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Vigil of the Assumption": {
+    "class": "V",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. Eusebius, Priest & Confessor": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "The Assumption of The B.V.M.": {
+    "class": "D1",
+    "octave": "C",
+    "obligation": "y",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. Joachim, Father of the B.V.M.": {
+    "class": "D2",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n",
+    "rank": 20
+  },
+  "Day II within the Octave of the Assumption": {
+    "class": "DiOC",
+    "office": "Sd",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n",
+    "feast": "The Assumption of The B.V.M."
+  },
+  "Day III within the Octave of the Assumption": {
+    "class": "DiOC",
+    "office": "Sd",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n",
+    "feast": "The Assumption of The B.V.M."
+  },
+  "Octave of St. Laurence": {
+    "class": "ODS",
+    "office": "S",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Day IV within the Octave of the Assumption": {
+    "class": "DiOC",
+    "office": "Sd",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n",
+    "feast": "The Assumption of The B.V.M."
+  },
+  "St. Helen, Empress": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. Agapitus, Martyr": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Day V within the Octave of the Assumption": {
+    "class": "DiOC",
+    "office": "Sd",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n",
+    "feast": "The Assumption of The B.V.M."
+  },
+  "Day VI within the Octave of the Assumption": {
+    "class": "DiOC",
+    "office": "Sd",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n",
+    "feast": "The Assumption of The B.V.M."
+  },
+  "Day VII within the Octave of the Assumption": {
+    "class": "DiOC",
+    "office": "Sd",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n",
+    "feast": "The Assumption of The B.V.M."
+  },
+  "Octave of the Assumption": {
+    "class": "ODC",
+    "office": "Gd",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n",
+    "feast": "The Assumption of The B.V.M."
+  },
+  "Ss. Timothy (Bishop), Hippolytus, & Symphorian, Martyrs": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Vigil of St. Bartholomew": {
+    "class": "V",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. Bartholomew, Apostle": {
+    "class": "D2",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n",
+    "rank": 13
+  },
+  "St. Hilda of Whitby, Virgin": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. Zephyrinus, Bishop & Martyr": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. Augustine of Hippo, Bishop, Confessor & Doctor": {
+    "class": "Gd",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n",
+    "rank": 8
+  },
+  "St. Hermes, Martyr": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Beheading of St. John Baptist": {
+    "class": "Gd",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n",
+    "rank": 4
+  },
+  "St. Sabina, Martyr": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Ss. Felix & Adauctus, Martyrs": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. Aidan of Lindisfarne, Bishop & Confessor": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. Giles, Abbot": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Twelve Holy Brothers, Martyrs": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. Stephen of Hungary, King & Confessor": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. Gorazde of Prague, Bishop & Martyr": {
+    "class": "D",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "The Nativity of The B.V.M.": {
+    "class": "D2",
+    "octave": "S",
+    "obligation": "n",
+    "devotion": "y",
+    "secondary": "n",
+    "rank": 6
+  },
+  "Octave of the Nativity of The B.V.M.": {
+    "class": "ODS",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n",
+    "feast": "The Nativity of The B.V.M."
+  },
+  "St. Hadrian, Martyr": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. Gorgonius, Martyr": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "The Most Holy Name of Mary": {
+    "class": "Gd",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Ss. Protus & Hyacinth, Martyrs": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Exaltation of the Holy Cross": {
+    "class": "Gd",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "y",
+    "secondary": "y",
+    "rank": 16
+  },
+  "Seven Sorrows of the B.V.M.": {
+    "class": "D2",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "y",
+    "rank": 25
+  },
+  "St. Nicomedes, Martyr": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Ss. Cornelius & Cyprian, Bishops & Martyrs": {
+    "class": "D",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Ss. Euphemia, Lucy & Geminian, Martyrs": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. Januarius & companions, Martyrs": {
+    "class": "D",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. Theodore of Canterbury, Bishop & Confessor": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Ember Wednesday in September": {
+    "class": "F2",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. Eustace & companions, Martyrs": {
+    "class": "D",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Vigil of St. Matthew": {
+    "class": "V",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. Matthew, Apostle & Evangelist": {
+    "class": "D2",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n",
+    "rank": 14
+  },
+  "Ember Friday in September": {
+    "class": "F2",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "y"
+  },
+  "St. Maurice & companions, Martyrs": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Ember Saturday in September": {
+    "class": "F2",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. Linus, Bishop & Martyr": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. Thecla, Virgin & Martyr": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Ss. Cyprian & Justina, Martyrs": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Ss. Cosmas & Damian, Martyrs": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. Wenceslaus, Duke, Martyr": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Dedication of St. Michael the Archangel": {
+    "class": "D1",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n",
+    "rank": 17
+  },
+  "St. Jerome, Priest, Confessor & Doctor": {
+    "class": "Gd",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n",
+    "rank": 9
+  },
+  "St. Gregory of Armenia, Bishop & Confessor": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. Remigius, Bishop & Confessor": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Holy Guardian Angels": {
+    "class": "Gd",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n",
+    "rank": 3
+  },
+  "St. Placidus & companions, Martyrs": {
+    "class": "D",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "The Holy Rosary of the B.V.M.": {
+    "class": "Gd",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n",
+    "rank": 3
+  },
+  "St. Mark of Rome, Bishop & Confessor": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Ss. Sergius, Bacchus, Marcellus & Apuleius, Martyrs": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Ss. Denys, Rusticus & Eleutherius, Martyrs": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Motherhood of the B.V.M.": {
+    "class": "D2",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "y",
+    "rank": 26
+  },
+  "St. Wilfrid, Bishop & Confessor": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. Edward, King & Confessor": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. Callistus, Bishop & Martyr": {
+    "class": "D",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Our Lady of Walsingham": {
+    "class": "D",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. Luke, Evangelist": {
+    "class": "D2",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n",
+    "rank": 17
+  },
+  "St. Frideswide, Virgin": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Saturday Office of the B.V.M.": {
+    "class": "BVM",
+    "office": "S",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. Hilarion, Abbot": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Ss. Ursula & companions, Martyrs": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. Raphael the Archangel": {
+    "class": "Gd",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Ss. Chrysanthus & Daria, Martyrs": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. Evaristus, Bishop & Martyr": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Vigil of Ss. Simon & Jude": {
+    "class": "V",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Ss. Simon & Jude, Apostles": {
+    "class": "D2",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n",
+    "rank": 15
+  },
+  "The Feast of Our Lord Jesus Christ the King": {
+    "class": "D1",
+    "octave": "N",
+    "obligation": "y",
+    "devotion": "n",
+    "secondary": "n",
+    "rank": 13
+  },
+  "Vigil of All Saints": {
+    "class": "V",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "The Feast of All Saints": {
+    "class": "D1",
+    "octave": "C",
+    "obligation": "y",
+    "devotion": "n",
+    "secondary": "n",
+    "rank": 22
+  },
+  "Commemoration of All the Faithful Departed": {
+    "class": "D",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "y",
+    "secondary": "n"
+  },
+  "Day II within the Octave of All Saints": {
+    "class": "DiOC",
+    "office": "Sd",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n",
+    "feast": "The Feast of All Saints"
+  },
+  "Day III within the Octave of All Saints": {
+    "class": "DiOC",
+    "office": "Sd",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n",
+    "feast": "The Feast of All Saints"
+  },
+  "St. Winifred, Virgin & Martyr": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Day IV within the Octave of All Saints": {
+    "class": "DiOC",
+    "office": "Sd",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n",
+    "feast": "The Feast of All Saints"
+  },
+  "Ss. Vitalis & Agricola, Martyrs": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Day V within the Octave of All Saints": {
+    "class": "DiOC",
+    "office": "Sd",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n",
+    "feast": "The Feast of All Saints"
+  },
+  "St. Elizabeth, Mother of St. John Baptist": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Day VI within the Octave of All Saints": {
+    "class": "DiOC",
+    "office": "Sd",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n",
+    "feast": "The Feast of All Saints"
+  },
+  "Day VII within the Octave of All Saints": {
+    "class": "DiOC",
+    "office": "Sd",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n",
+    "feast": "The Feast of All Saints"
+  },
+  "St. Willibrord, Bishop & Confessor": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Octave Day of All Saints": {
+    "class": "ODC",
+    "office": "Gd",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n",
+    "feast": "The Feast of All Saints"
+  },
+  "Four Crowned Martyrs": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Dedication of The Basilica of St. Saviour": {
+    "class": "D2",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n",
+    "rank": 3
+  },
+  "St. Theodore Tyro, Martyr": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Ss. Tryphon, Respicius & Nympha, Martyrs": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. Martin of Tours, Bishop & Confessor": {
+    "class": "Gd",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n",
+    "rank": 10
+  },
+  "St. Mennas, Martyr": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. Martin I, Bishop & Martyr": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. Britius of Tours, Bishop & Confessor": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. Gregory Palamas, Bishop & Confessor": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. Gregory the Wonder-worker, Bishop & Confessor": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Dedication of the Basilica of the Holy Apostles Peter & Paul": {
+    "class": "Gd",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n",
+    "rank": 1
+  },
+  "St. Pontianus, Bishop & Martyr": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. Edmund, King & Martyr": {
+    "class": "D",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "The Presentation of the B.V.M.": {
+    "class": "Gd",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "y",
+    "secondary": "n",
+    "rank": 2
+  },
+  "St. Gelasius, Bishop & Confessor": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. Columbanus, Abbot": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. Cecilia, Virgin & Martyr": {
+    "class": "D",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n",
+    "rank": 14
+  },
+  "St. Clement, Bishop & Martyr": {
+    "class": "D",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. Felicitas, Martyr": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. Chrysogonus, Martyr": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. Catherine of Alexandria, Virgin & Martyr": {
+    "class": "D",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. Peter of Alexandria, Bishop & Martyr": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Vigil of St. Andrew": {
+    "class": "V",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. Saturninus, Bishop & Martyr": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. Andrew, Apostle": {
+    "class": "D2",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n",
+    "rank": 7
+  },
+  "St. Peter Chrysologus, Bishop, Confessor & Doctor": {
+    "class": "D",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. Bibiana, Virgin & Martyr": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "I Sunday in Advent": {
+    "class": "Sd1",
+    "octave": "N",
+    "obligation": "y",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. Barbara, Virgin & Martyr": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. Sabbas of Judæa, Abbot": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. Nicholas, Bishop & Confessor": {
+    "class": "D",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Commemoration of Advent Feria": {
+    "class": "F3",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. Ambrose of Milan, Bishop, Confessor & Doctor": {
+    "class": "Gd",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n",
+    "rank": 7
+  },
+  "The Conception of the B.V.M.": {
+    "class": "D2",
+    "octave": "C",
+    "obligation": "n",
+    "devotion": "y",
+    "secondary": "n"
+  },
+  "Day II within Conception Octave": {
+    "class": "DiOC",
+    "office": "Sd",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n",
+    "feast": "The Conception of the B.V.M."
+  },
+  "II Sunday in Advent": {
+    "class": "Sd2",
+    "octave": "N",
+    "obligation": "y",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Day III within Conception Octave": {
+    "class": "DiOC",
+    "office": "Sd",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n",
+    "feast": "The Conception of the B.V.M."
+  },
+  "St. Melchiades, Bishop & Martyr": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. Damasus, Bishop & Confessor": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Day IV within Conception Octave": {
+    "class": "DiOC",
+    "office": "Sd",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n",
+    "feast": "The Conception of the B.V.M."
+  },
+  "Day V within Conception Octave": {
+    "class": "DiOC",
+    "office": "Sd",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n",
+    "feast": "The Conception of the B.V.M."
+  },
+  "St. Lucy, Virgin & Martyr": {
+    "class": "Gd",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n",
+    "rank": 15
+  },
+  "Day VI within Conception Octave": {
+    "class": "DiOC",
+    "office": "Sd",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n",
+    "feast": "The Conception of the B.V.M."
+  },
+  "St. Herman of Alaska, Priest & Confessor": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Day VII within Conception Octave": {
+    "class": "DiOC",
+    "office": "Sd",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n",
+    "feast": "The Conception of the B.V.M."
+  },
+  "Octave of the Conception of the B.V.M.": {
+    "class": "ODC",
+    "office": "Gd",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n",
+    "feast": "The Conception of the B.V.M."
+  },
+  "St. Eusebius of Vercelli, Bishop & Martyr": {
+    "class": "M",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "III Sunday in Advent": {
+    "class": "Sd2",
+    "octave": "N",
+    "obligation": "y",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Expectation of the B.V.M.": {
+    "class": "Gd",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Ember Wednesday in Advent": {
+    "class": "F2",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. Thomas, Apostle": {
+    "class": "D2",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n",
+    "rank": 8
+  },
+  "Ember Friday in Advent": {
+    "class": "F2",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Ember Saturday in Advent": {
+    "class": "F2",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Vigil of the Nativity of the Lord": {
+    "class": "V1",
+    "octave": "N",
+    "obligation": "y",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "IV Sunday in Advent": {
+    "class": "Sd2",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "The Nativity of Our Lord": {
+    "class": "D1",
+    "octave": "3",
+    "obligation": "y",
+    "devotion": "n",
+    "secondary": "n",
+    "rank": 1
+  },
+  "St. Anastasia, Virgin & Martyr": {
+    "class": "Comm",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "St. Stephen, Protomartyr": {
+    "class": "D2",
+    "octave": "S",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n",
+    "rank": 18
+  },
+  "Day II within the Nativity Octave": {
+    "class": "DiO3",
+    "office": "Sd",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n",
+    "feast": "The Nativity of Our Lord"
+  },
+  "St. John, Apostle & Evangelist": {
+    "class": "D2",
+    "octave": "S",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n",
+    "rank": 9
+  },
+  "Day III within the Nativity Octave": {
+    "class": "DiO3",
+    "office": "Sd",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n",
+    "feast": "The Nativity of Our Lord"
+  },
+  "The Holy Innocents, Martyrs": {
+    "class": "D2",
+    "octave": "S",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n",
+    "rank": 19
+  },
+  "Day IV within the Nativity Octave": {
+    "class": "DiO3",
+    "office": "Sd",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n",
+    "feast": "The Nativity of Our Lord"
+  },
+  "Day V within the Nativity Octave": {
+    "class": "DiO3",
+    "office": "Sd",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n",
+    "feast": "The Nativity of Our Lord"
+  },
+  "Day VI within the Nativity Octave": {
+    "class": "DiO3",
+    "office": "Sd",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n",
+    "feast": "The Nativity of Our Lord"
+  },
+  "Day VII within the Nativity Octave": {
+    "class": "DiO3",
+    "office": "Sd",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n",
+    "feast": "The Nativity of Our Lord"
+  },
+  "The Sunday within the Octave of the Nativity": {
+    "class": "DiO3",
+    "office": "Sd",
+    "octave": "N",
+    "obligation": "y",
+    "devotion": "n",
+    "secondary": "n",
+    "feast": "The Nativity of Our Lord"
+  },
+  "St. Sylvester, Bishop & Confessor": {
+    "class": "D",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n"
+  },
+  "Octave Day of St. Stephen": {
+    "class": "ODS",
+    "office": "S",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n",
+    "feast": "St. Stephen, Protomartyr"
+  },
+  "Octave Day of St. John, Apostle & Evangelist": {
+    "class": "ODS",
+    "office": "S",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n",
+    "feast": "St. John, Apostle & Evangelist"
+  },
+  "Octave Day of the Holy Innocents": {
+    "class": "ODS",
+    "office": "S",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "n",
+    "feast": "The Holy Innocents, Martyrs"
+  },
+  "Feast of the Most Sacred Heart of Jesus": {
+    "class": "D2",
+    "octave": "S",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "y",
+    "rank": 12
+  },
+  "Octave of the Most Sacred Heart of Jesus": {
+    "class": "ODS",
+    "office": "S",
+    "octave": "N",
+    "obligation": "n",
+    "devotion": "n",
+    "secondary": "y",
+    "feast": "Feast of the Most Sacred Heart of Jesus"
+  }
+}

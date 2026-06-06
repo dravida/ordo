@@ -1,0 +1,426 @@
+{
+  "Septuagesima Sunday": {
+    "basis": "easter",
+    "diff": -63
+  },
+  "Sexagesima Sunday": {
+    "basis": "easter",
+    "diff": -56
+  },
+  "Quinquagesima Sunday": {
+    "basis": "easter",
+    "diff": -49
+  },
+  "Ash Wednesday": {
+    "basis": "easter",
+    "diff": -46
+  },
+  "Thursday after Ash Wednesday": {
+    "basis": "easter",
+    "diff": -45
+  },
+  "Friday after Ash Wednesday": {
+    "basis": "easter",
+    "diff": -44
+  },
+  "Saturday after Ash Wednesday": {
+    "basis": "easter",
+    "diff": -43
+  },
+  "I Sunday in Lent": {
+    "basis": "easter",
+    "diff": -42
+  },
+  "Monday after Lent I": {
+    "basis": "easter",
+    "diff": -41
+  },
+  "Tuesday after Lent I": {
+    "basis": "easter",
+    "diff": -40
+  },
+  "Ember Wednesday in Lent": {
+    "basis": "easter",
+    "diff": -39
+  },
+  "Thursday after Lent I": {
+    "basis": "easter",
+    "diff": -38
+  },
+  "Ember Friday in Lent": {
+    "basis": "easter",
+    "diff": -37
+  },
+  "Ember Saturday in Lent": {
+    "basis": "easter",
+    "diff": -36
+  },
+  "II Sunday in Lent": {
+    "basis": "easter",
+    "diff": -35
+  },
+  "Monday after Lent II": {
+    "basis": "easter",
+    "diff": -34
+  },
+  "Tuesday after Lent II": {
+    "basis": "easter",
+    "diff": -33
+  },
+  "Wednesday after Lent II": {
+    "basis": "easter",
+    "diff": -32
+  },
+  "Thursday after Lent II": {
+    "basis": "easter",
+    "diff": -31
+  },
+  "Friday after Lent II": {
+    "basis": "easter",
+    "diff": -30
+  },
+  "Saturday after Lent II": {
+    "basis": "easter",
+    "diff": -29
+  },
+  "III Sunday in Lent": {
+    "basis": "easter",
+    "diff": -28
+  },
+  "Monday after Lent III": {
+    "basis": "easter",
+    "diff": -27
+  },
+  "Tuesday after Lent III": {
+    "basis": "easter",
+    "diff": -26
+  },
+  "Wednesday after Lent III": {
+    "basis": "easter",
+    "diff": -25
+  },
+  "Thursday after Lent III": {
+    "basis": "easter",
+    "diff": -24
+  },
+  "Friday after Lent III": {
+    "basis": "easter",
+    "diff": -23
+  },
+  "Saturday after Lent III": {
+    "basis": "easter",
+    "diff": -22
+  },
+  "IV Sunday in Lent": {
+    "basis": "easter",
+    "diff": -21
+  },
+  "Monday after Lent IV": {
+    "basis": "easter",
+    "diff": -20
+  },
+  "Tuesday after Lent IV": {
+    "basis": "easter",
+    "diff": -19
+  },
+  "Wednesday after Lent IV": {
+    "basis": "easter",
+    "diff": -18
+  },
+  "Thursday after Lent IV": {
+    "basis": "easter",
+    "diff": -17
+  },
+  "Friday after Lent IV": {
+    "basis": "easter",
+    "diff": -16
+  },
+  "Saturday after Lent IV": {
+    "basis": "easter",
+    "diff": -15
+  },
+  "Sunday of the Passion": {
+    "basis": "easter",
+    "diff": -14
+  },
+  "Monday after Passion Sunday": {
+    "basis": "easter",
+    "diff": -13
+  },
+  "Tuesday after Passion Sunday": {
+    "basis": "easter",
+    "diff": -12
+  },
+  "Wednesday after Passion Sunday": {
+    "basis": "easter",
+    "diff": -11
+  },
+  "Thursday after Passion Sunday": {
+    "basis": "easter",
+    "diff": -10
+  },
+  "Friday after Passion Sunday": {
+    "basis": "easter",
+    "diff": -9
+  },
+  "Our Lady of Sorrows": {
+    "basis": "easter",
+    "diff": -9
+  },
+  "Saturday after Passion Sunday": {
+    "basis": "easter",
+    "diff": -8
+  },
+  "Palm Sunday": {
+    "basis": "easter",
+    "diff": -7
+  },
+  "Monday in Holy Week": {
+    "basis": "easter",
+    "diff": -6
+  },
+  "Tuesday in Holy Week": {
+    "basis": "easter",
+    "diff": -5
+  },
+  "Wednesday in Holy Week": {
+    "basis": "easter",
+    "diff": -4
+  },
+  "Thursday of the Lord’s Supper": {
+    "basis": "easter",
+    "diff": -3
+  },
+  "Friday of the Preparation (Good Friday)": {
+    "basis": "easter",
+    "diff": -2
+  },
+  "Holy Saturday": {
+    "basis": "easter",
+    "diff": -1
+  },
+  "Sunday of the Resurrection (Easter)": {
+    "basis": "easter",
+    "diff": 0
+  },
+  "Monday in the Octave of Easter": {
+    "basis": "easter",
+    "diff": 1
+  },
+  "Tuesday in the Octave of Easter": {
+    "basis": "easter",
+    "diff": 2
+  },
+  "Wednesday in the Octave of Easter": {
+    "basis": "easter",
+    "diff": 3
+  },
+  "Thursday in the Octave of Easter": {
+    "basis": "easter",
+    "diff": 4
+  },
+  "Friday in the Octave of Easter": {
+    "basis": "easter",
+    "diff": 5
+  },
+  "Saturday in the Octave of Easter (Sabbato in Albis)": {
+    "basis": "easter",
+    "diff": 6
+  },
+  "The Octave of Easter (Dominica in Albis; Low Sunday)": {
+    "basis": "easter",
+    "diff": 7
+  },
+  "II Sunday after Easter": {
+    "basis": "easter",
+    "diff": 14
+  },
+  "Solemnity of St. Joseph, Spouse of the B.V.M.": {
+    "basis": "easter",
+    "diff": 17
+  },
+  "Octave of the Solmenity of St Joseph": {
+    "basis": "easter",
+    "diff": 24
+  },
+  "III Sunday after Easter": {
+    "basis": "easter",
+    "diff": 21
+  },
+  "IV Sunday after Easter": {
+    "basis": "easter",
+    "diff": 28
+  },
+  "V Sunday after Easter": {
+    "basis": "easter",
+    "diff": 35
+  },
+  "Rogation Monday": {
+    "basis": "easter",
+    "diff": 36
+  },
+  "Rogation Tuesday": {
+    "basis": "easter",
+    "diff": 37
+  },
+  "The Vigil of the Ascension": {
+    "basis": "easter",
+    "diff": 38
+  },
+  "The Ascension of Our Lord": {
+    "basis": "easter",
+    "diff": 39
+  },
+  "Day II within the Octave of the Ascension": {
+    "basis": "easter",
+    "diff": 40
+  },
+  "Day III within the Octave of the Ascension": {
+    "basis": "easter",
+    "diff": 41
+  },
+  "Day IV within the Octave of The Ascension": {
+    "basis": "easter",
+    "diff": 42
+  },
+  "Day V within the Octave of the Ascension": {
+    "basis": "easter",
+    "diff": 43
+  },
+  "Day VI within the Octave of the Ascension": {
+    "basis": "easter",
+    "diff": 44
+  },
+  "Day VII within the Octave of the Ascension": {
+    "basis": "easter",
+    "diff": 45
+  },
+  "The Octave of the Ascension": {
+    "basis": "easter",
+    "diff": 46
+  },
+  "Friday after the Octave of the Ascension": {
+    "basis": "easter",
+    "diff": 47
+  },
+  "The Vigil of Pentecost": {
+    "basis": "easter",
+    "diff": 48
+  },
+  "Pentecost Sunday": {
+    "basis": "easter",
+    "diff": 49
+  },
+  "Monday within the Octave of Pentecost": {
+    "basis": "easter",
+    "diff": 50
+  },
+  "Tuesday within the Octave of Pentecost": {
+    "basis": "easter",
+    "diff": 51
+  },
+  "Ember Wednesday in Pentecost": {
+    "basis": "easter",
+    "diff": 52
+  },
+  "Thursday within the Octave of Pentecost": {
+    "basis": "easter",
+    "diff": 53
+  },
+  "Ember Friday in Pentecost": {
+    "basis": "easter",
+    "diff": 54
+  },
+  "Ember Saturday in Pentecost": {
+    "basis": "easter",
+    "diff": 55
+  },
+  "The Feast of the Most Holy Trinity": {
+    "basis": "easter",
+    "diff": 56
+  },
+  "I Sunday after Pentecost": {
+    "basis": "easter",
+    "diff": 56
+  },
+  "The Feast of the Most Holy Body of Christ": {
+    "basis": "easter",
+    "diff": 60
+  },
+  "Day II within the Octave of Corpus Christi": {
+    "basis": "easter",
+    "diff": 61
+  },
+  "Day III within the Octave of Corpus Christi": {
+    "basis": "easter",
+    "diff": 62
+  },
+  "Day IV within the Octave of Corpus Christi": {
+    "basis": "easter",
+    "diff": 63
+  },
+  "Day V within the Octave of Corpus Christi": {
+    "basis": "easter",
+    "diff": 64
+  },
+  "Day VI within the Octave of Corpus Christi": {
+    "basis": "easter",
+    "diff": 65
+  },
+  "Day VII within the Octave of Corpus Christi": {
+    "basis": "easter",
+    "diff": 66
+  },
+  "Octave of Corpus Christi": {
+    "basis": "easter",
+    "diff": 67
+  },
+  "Feast of the Most Sacred Heart of Jesus": {
+    "basis": "easter",
+    "diff": 68
+  },
+  "Octave of the Most Sacred Heart of Jesus": {
+    "basis": "easter",
+    "diff": 75
+  },
+  "Ember Wednesday in September": {
+    "basis": "ember",
+    "diff": 0
+  },
+  "Ember Friday in September": {
+    "basis": "ember",
+    "diff": 2
+  },
+  "Ember Saturday in September": {
+    "basis": "ember",
+    "diff": 3
+  },
+  "I Sunday in Advent": {
+    "basis": "advent",
+    "diff": 0
+  },
+  "II Sunday in Advent": {
+    "basis": "advent",
+    "diff": 7
+  },
+  "III Sunday in Advent": {
+    "basis": "advent",
+    "diff": 14
+  },
+  "Ember Wednesday in Advent": {
+    "basis": "advent",
+    "diff": 17
+  },
+  "Ember Friday in Advent": {
+    "basis": "advent",
+    "diff": 19
+  },
+  "Ember Saturday in Advent": {
+    "basis": "advent",
+    "diff": 20
+  },
+  "IV Sunday in Advent": {
+    "basis": "advent",
+    "diff": 21
+  }
+}
