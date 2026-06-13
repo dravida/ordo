@@ -140,5 +140,19 @@ const months = buildPublication(YEAR, k, epactTable, monthNotes);
 const totalDays = months.reduce((a, m) => a + m.days.length, 0);
 check('day count', totalDays, ((YEAR % 4 === 0 && (YEAR % 100 !== 0 || YEAR % 400 === 0)) ? 366 : 365));
 
+// --- master (perpetual) Kalendar: fixed feasts only ---------------------------
+console.log('\nMaster Kalendar assertions:');
+const km = new Kalendar(2001, true);
+const masterMonths = buildPublication(null, km, epactTable, monthNotes);
+const allFeasts = masterMonths.flatMap(m => m.days.flatMap(d => d.celebrations.map(c => c.feast)));
+const has = (re) => allFeasts.some(f => re.test(f));
+check('master: Feb has 28 days', masterMonths[1].days.length, 28);
+check('master: includes Octave Day of St. Stephen', has(/Octave Day of St\. Stephen/), true);
+check('master: includes Day II within the Octave of the Epiphany', has(/Day II within the Octave of the Epiphany/), true);
+check('master: EXCLUDES Saturday Office of the B.V.M.', has(/Saturday Office of the B\.V\.M\./), false);
+check('master: EXCLUDES Sunday within the Octave', has(/Sunday within the Octave/), false);
+check('master: EXCLUDES Sunday after the Epiphany', has(/Sunday after the Epiphany/), false);
+check('master: dow is -1 (no weekday)', masterMonths[0].days[0].dow, -1);
+
 console.log(`\n${failures === 0 ? 'ALL STRUCTURAL CHECKS PASSED' : failures + ' STRUCTURAL CHECK(S) FAILED'}`);
 process.exit(failures === 0 ? 0 : 1);

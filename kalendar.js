@@ -4,11 +4,20 @@ import {romanNumeral} from './roman_numeral.js';
 import {addDays, diffDays, diffWeeks, addWeek, subWeek, addDay, subDay, leapYear} from './date_calcs.js';
 
 export default class Kalendar {
-  // y is the "base year" - others added as needed
-  constructor(y) {
+  // y is the "base year" - others added as needed.
+  // master = true builds a perpetual "master" Kalendar of the fixed feasts only
+  // (no moveable/derived feasts, no year-specific precedence); look those up via
+  // getByMonthDay(m, d) since they have no calendar year.
+  constructor(y, master = false) {
     this.k = {};
-    var o = new KalendarYear(y);
-    this.k[y] = o;    
+    this.baseYear = y;
+    this.master = master;
+    var o = new KalendarYear(y, master);
+    this.k[y] = o;
+  }
+
+  getByMonthDay(m, d) {
+    return(this.k[this.baseYear].getByMonthDay(m, d));
   }
 
   static getMoveable(y, name) {
@@ -147,21 +156,27 @@ export default class Kalendar {
 
 class KalendarYear {
 
-  constructor(year) {
+  constructor(year, master = false) {
     this.year = year;
+    this.master = master;
     // one element per month
     this.dates = [[], [], [], [], [], [], [], [], [], [], [], []];
     // set up a variable to keep feasts that need translation in order
-    this.toTranslate = []; 
-    // initialize the calendar
-    for (var m in moveable) {
-      var d = Kalendar.getMoveable(year, m);
-      this.addDate2(d, m);
+    this.toTranslate = [];
+    // initialize the calendar. In master mode we add only the fixed (perpetual)
+    // feasts -- moveable and weekday-derived feasts have no place in a calendar
+    // with no year -- and skip the year-specific precedence resolution.
+    if (!master) {
+      for (var m in moveable) {
+        var d = Kalendar.getMoveable(year, m);
+        this.addDate2(d, m);
+      }
     }
-    var ly = leapYear(year);
+    var ly = !master && leapYear(year);
     for (var f in fixed) {
       this.addDate(fixed[f]["m"], fixed[f]["d"] + (fixed[f]["addleap"] == "yes" && ly ? 1 : 0), f.trim());
     }
+    if (master) return;
     this.addHolyNames(year);
     this.addSundaysAfterEpiphany();
     this.addSundaysAfterTrinity();
@@ -215,17 +230,28 @@ class KalendarYear {
   }
 
   getDate(date) {
-    if(date.getFullYear() != this.year) { 
-      throw new Error("Asking for a date outside this kalendar object's year:" + date); 
+    if(date.getFullYear() != this.year) {
+      throw new Error("Asking for a date outside this kalendar object's year:" + date);
     }
     var out = this.dates[date.getMonth()][date.getDate() - 1];
-    if(out == undefined) { 
+    if(out == undefined) {
       var o = new KalendarDate("");
       this.dates[date.getMonth()][date.getDate() - 1] = o;
-      return(o); 
+      return(o);
     } else {
       return(out);
     }
+  }
+
+  // Year-independent lookup by month/day (1-based), used by the master Kalendar.
+  getByMonthDay(m, d) {
+    var out = this.dates[m - 1][d - 1];
+    if(out == undefined) {
+      var o = new KalendarDate("");
+      this.dates[m - 1][d - 1] = o;
+      return(o);
+    }
+    return(out);
   }
 
   findDate(name) {

@@ -14,7 +14,8 @@ export default function renderPublication(container, year, k, epactTable, monthN
   const months = buildPublication(year, k, epactTable, monthNotes);
   const out = [];
   out.push('<div class="pub-kalendar">');
-  out.push('<h1 class="pub-title">Liturgical Kalendar ' + esc(year) + '</h1>');
+  out.push('<h1 class="pub-title">Liturgical Kalendar' +
+           (year != null ? ' ' + esc(year) : '') + '</h1>');
 
   for (const month of months) {
     out.push('<table class="pub-month">');

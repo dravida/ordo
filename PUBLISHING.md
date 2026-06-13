@@ -8,7 +8,8 @@ traditional printed layout and exports it as **PDF** or **CSV**.
 1. Serve the repo: `bash webserver.sh` (or `python3 -m http.server`).
 2. Open `index.html` and click **Publish**.
 3. Choose **Which Year?** and **What to publish** (Kalendar; *Ordo* is coming
-   soon and disabled).
+   soon and disabled). Leave **Which Year?** blank to publish the perpetual
+   **master Kalendar**.
 4. Click **Preview** to render the Kalendar in the page.
 5. Click **Download** and pick **PDF** or **CSV** (*Word doc* is coming soon and
    disabled).
@@ -26,6 +27,21 @@ The publication table has five columns: **Epact · D. L. · Day · Feast · Rank
   (e.g. 2027 → C) for future Ordo title pages.
 - **Rank** — `formatRank(celebration)` is the office class plus an octave suffix
   when present, e.g. Epiphany (`D1` + octave `2`) → `D1, O2`.
+
+## Master (perpetual) Kalendar
+
+With **Which Year?** left blank, the publish flow builds `new Kalendar(y, true)`,
+which adds only the **fixed** (perpetual) feasts and skips moveable/derived
+feasts and year-specific precedence. This is driven by the data (the `fixed`
+feast set) — not by text matching — so octave days and the "Day II–VII within
+the Octave" entries are kept, while weekday-derived feasts (Saturday Office of
+the B.V.M., Sunday within the Octave, Sundays after Epiphany/Trinity, Ferias,
+the floating Holy Names) are absent. The title drops the year and the day-of-week
+is unused. Master days are read with `Kalendar.getByMonthDay(m, d)`.
+
+Note: the `fixed` data contains a bracketed `[The Most Holy Name of Jesus]`
+(Aug 7) that will surface in master mode with its literal brackets — a pre-existing
+data entry to clean up separately if undesired.
 
 ## Month-end notes
 

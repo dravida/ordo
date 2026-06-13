@@ -17,9 +17,11 @@ async function loadJson(path) {
 }
 
 // Master month-end notes overlaid by an optional per-year override
-// (data/<year>/monthnotes.json wins per month).
+// (data/<year>/monthnotes.json wins per month). With no year (master Kalendar)
+// only the master notes apply.
 export async function loadMonthNotes(year) {
   const master = (await loadJson('data/monthnotes.json')) || {};
+  if (year == null) return master;
   const override = await loadJson('data/' + year + '/monthnotes.json');
   const merged = Object.assign({}, master);
   if (override) {
@@ -27,6 +29,11 @@ export async function loadMonthNotes(year) {
   }
   return merged;
 }
+
+// Year used to materialize the master Kalendar's fixed feasts. Its value is
+// irrelevant (master mode adds no moveable/derived feasts and disables the
+// leap-day shift); a common year keeps February at 28 days.
+const MASTER_BASE_YEAR = 2001;
 
 let epactTable = null;
 
@@ -37,14 +44,21 @@ async function getEpactTable() {
 
 // Reads the UI, builds the calendar + data, and renders the preview.
 async function preview() {
-  const year = parseInt(document.getElementById('pub-year').value, 10);
   const what = document.getElementById('pub-what').value;
   if (what !== 'kalendar') return; // Ordo disabled
+
+  // A blank year produces the perpetual "master" Kalendar (fixed feasts only).
+  const raw = document.getElementById('pub-year').value.trim();
+  const master = raw === '';
+  const year = master ? null : parseInt(raw, 10);
+  if (!master && !Number.isFinite(year)) return;
+
   const container = document.getElementById('pub-output');
-  container.innerHTML = '<p class="pub-loading">Building ' + year + ' Kalendar…</p>';
+  container.innerHTML = '<p class="pub-loading">Building ' +
+    (master ? 'master' : year) + ' Kalendar…</p>';
 
   const [notes, epacts] = await Promise.all([loadMonthNotes(year), getEpactTable()]);
-  const k = new Kalendar(year);
+  const k = new Kalendar(master ? MASTER_BASE_YEAR : year, master);
   renderPublication(container, year, k, epacts, notes);
 
   // remember the last-built context for downloads
@@ -64,9 +78,6 @@ async function download() {
 }
 
 export function initPublish() {
-  const yearInput = document.getElementById('pub-year');
-  if (yearInput && !yearInput.value) yearInput.value = new Date().getFullYear();
-
   const panel = document.getElementById('pub-panel');
   const btn = document.getElementById('pub-open');
   if (btn) btn.addEventListener('click', () => {

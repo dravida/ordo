@@ -38,6 +38,7 @@
   font: inherit;
 }
 .pub-panel select option:disabled { color: #999; }
+.pub-hint { color: #888; font-size: 0.78rem; margin-left: 0.4em; }
 
 .pub-output { padding: 1em; }
 .pub-loading { color: #666; font-style: italic; }

@@ -104,3 +104,17 @@ QUnit.test("Publish: Epact lookup", function( assert ) {
   assert.equal(getEpact(table, 1, 30), "i");
   assert.equal(getEpact(table, 1, 2), "", "missing entry -> empty string");
 });
+
+QUnit.test("Master Kalendar = fixed feasts only", function( assert ) {
+  var k = new Kalendar(2001, true);
+  function feastsOn(m, d) {
+    return k.getByMonthDay(m, d).getCelebrations().map(function(c){ return c.name; });
+  }
+  // included: fixed octave days / days within the octave
+  assert.ok(feastsOn(1, 2).some(n => /Octave Day of St\. Stephen/.test(n)), "Jan 2 octave day kept");
+  assert.ok(feastsOn(1, 7).some(n => /Day II within the Octave of the Epiphany/.test(n)), "Jan 7 day-in-octave kept");
+  // excluded: weekday-derived feasts
+  assert.notOk(feastsOn(1, 16).some(n => /Saturday Office/.test(n)), "Saturday Office excluded");
+  assert.notOk(feastsOn(1, 10).some(n => /Sunday within the Octave/.test(n)), "Sunday within Octave excluded");
+  assert.notOk(feastsOn(1, 17).some(n => /Sunday after the Epiphany/.test(n)), "Sunday after Epiphany excluded");
+});

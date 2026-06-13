@@ -40,7 +40,7 @@ export function toCsv(year, k, epactTable, monthNotes) {
 export function downloadCsv(year, k, epactTable, monthNotes) {
   const csv = toCsv(year, k, epactTable, monthNotes);
   const blob = new Blob([csv], {type: "text/csv;charset=utf-8;"});
-  triggerDownload(blob, "Liturgical_Kalendar_" + year + ".csv");
+  triggerDownload(blob, "Liturgical_Kalendar" + (year != null ? "_" + year : "") + ".csv");
 }
 
 export function triggerDownload(blob, filename) {

@@ -8,7 +8,7 @@ const MARGIN = 40;
 
 export function downloadPdf(year, k, epactTable, monthNotes) {
   const doc = buildPdfDoc(year, k, epactTable, monthNotes);
-  if (doc) doc.save("Liturgical_Kalendar_" + year + ".pdf");
+  if (doc) doc.save("Liturgical_Kalendar" + (year != null ? "_" + year : "") + ".pdf");
 }
 
 // Builds and returns the jsPDF document (without saving) so it can be exercised
@@ -24,7 +24,8 @@ export function buildPdfDoc(year, k, epactTable, monthNotes) {
   const pageHeight = doc.internal.pageSize.getHeight();
 
   doc.setFont("times", "bold").setFontSize(16);
-  doc.text("Liturgical Kalendar " + year, pageWidth / 2, MARGIN + 6, {align: "center"});
+  doc.text("Liturgical Kalendar" + (year != null ? " " + year : ""),
+           pageWidth / 2, MARGIN + 6, {align: "center"});
 
   const months = buildPublication(year, k, epactTable, monthNotes);
   let y = MARGIN + 26;
