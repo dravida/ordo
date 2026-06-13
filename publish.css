@@ -65,15 +65,25 @@ table.pub-month caption.pub-month-name {
   padding: 0.3em 0;
 }
 .pub-month th, .pub-month td {
-  border: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  border-top: 0;
+  border-bottom: 0;
   padding: 1px 5px;
   vertical-align: top;
 }
 .pub-month thead th {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
   background: #eceae4;
   font-weight: 700;
   text-align: center;
 }
+/* Group a day's feasts visually: draw a horizontal rule only above the first
+   row of each day (and close the bottom of the table), so multiple feasts on
+   the same day read as one block with no divider between them. */
+.pub-month tbody tr.pub-day-first td { border-top: 1px solid #ddd; }
+.pub-month tbody tr:last-child td { border-bottom: 1px solid #ddd; }
 .pub-month .pub-epact, .pub-month .pub-dl, .pub-month .pub-day { text-align: center; white-space: nowrap; }
 .pub-month .pub-rank { text-align: center; white-space: nowrap; }
 .pub-month tr.pub-sunday td { font-weight: 700; }
