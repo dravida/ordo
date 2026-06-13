@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Western Rite Orthodox Kalendar</title>
+    <link href="https://fonts.googleapis.com/css?family=Cinzel:400,700,900|Open+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="kalendar.css">
+    <link rel="stylesheet" type="text/css" href="publish.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <h1>Western Rite Orthodox Kalendar</h1>
+      <nav>
+        <button id="pub-open" type="button">Publish</button>
+        <a class="navlink" href="kalendar.html">Interactive view</a>
+      </nav>
+    </header>
+
+    <section id="pub-panel" class="pub-panel" style="display:none">
+      <div class="pub-controls">
+        <label>Which Year?
+          <input id="pub-year" type="number" min="1900" max="2200" step="1">
+        </label>
+        <label>What would you like to publish?
+          <select id="pub-what">
+            <option value="kalendar">Kalendar</option>
+            <option value="ordo" disabled>Ordo (coming soon)</option>
+          </select>
+        </label>
+        <button id="pub-preview" type="button">Preview</button>
+      </div>
+      <div id="pub-download-row" class="pub-download-row" style="display:none">
+        <label>Download as
+          <select id="pub-format">
+            <option value="pdf">PDF</option>
+            <option value="csv">CSV</option>
+            <option value="word" disabled>Word doc (coming soon)</option>
+          </select>
+        </label>
+        <button id="pub-download" type="button">Download</button>
+      </div>
+    </section>
+
+    <main id="pub-output" class="pub-output"></main>
+
+    <!-- Vendored PDF engine (UMD globals: window.jspdf.jsPDF + autotable) -->
+    <script src="js/jspdf.umd.min.js"></script>
+    <script src="js/jspdf.plugin.autotable.min.js"></script>
+    <!-- Feast database (sets the moveable/fixed/meta globals the engine reads) -->
+    <script src="kalendar_data.js"></script>
+    <!-- Publish controller (ES module; imports the engine + exporters) -->
+    <script type="module" src="publish.js"></script>
+  </body>
+</html>

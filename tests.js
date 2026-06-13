@@ -1,6 +1,7 @@
 import Kalendar from './kalendar.js';
 import Kalendar_old from './kalendar_old.js';
 import {addDay} from './date_calcs.js';
+import {getDayLetter, getSundayLetter, getEpact, formatRank} from './publish_columns.js';
 
 QUnit.test("Match new vs. old", function( assert ) {
   function testYear(year) {
@@ -77,4 +78,29 @@ QUnit.test("Number of weeks in Epiphany", function( assert ) {
   testNWE(2021, 7);  
   testNWE(2022, 6);  
   testNWE(2023, 5);  
+});
+
+QUnit.test("Publish: Day Letter (perpetual, A always capitalized)", function( assert ) {
+  assert.equal(getDayLetter(1, 1), "A", "Jan 1 = A");
+  assert.equal(getDayLetter(1, 8), "A", "Jan 8 = A (7-day cycle)");
+  assert.equal(getDayLetter(1, 3), "c", "Jan 3 = c (lowercase)");
+  assert.equal(getDayLetter(2, 1), "d", "Feb 1 = d");
+  assert.equal(getDayLetter(2, 2), "e", "Feb 2 = e");
+});
+QUnit.test("Publish: true Sunday (dominical) letter", function( assert ) {
+  assert.equal(getSundayLetter(2027), "C");
+  assert.equal(getSundayLetter(2026), "D");
+  assert.equal(getSundayLetter(2025), "E");
+});
+QUnit.test("Publish: Rank with octave suffix", function( assert ) {
+  assert.equal(formatRank({office: "D1", octave: "2"}), "D1, O2", "Epiphany-style");
+  assert.equal(formatRank({office: "D2", octave: "N"}), "D2", "no octave");
+  assert.equal(formatRank({office: "Gd", octave: "C"}), "Gd, OC", "common octave");
+});
+QUnit.test("Publish: Epact lookup", function( assert ) {
+  var table = {"1": {"1": "*", "6": "25 xxv", "30": "i"}};
+  assert.equal(getEpact(table, 1, 1), "*");
+  assert.equal(getEpact(table, 1, 6), "25 xxv");
+  assert.equal(getEpact(table, 1, 30), "i");
+  assert.equal(getEpact(table, 1, 2), "", "missing entry -> empty string");
 });

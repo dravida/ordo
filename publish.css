@@ -1,0 +1,88 @@
+/* Styling for the Publish landing page (index.html) and the publication-format
+   Kalendar preview. Kept self-contained so it can be reused by print/PDF. */
+
+.site-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  padding: 0.75em 1em;
+  border-bottom: 2px solid #333;
+}
+.site-header h1 {
+  font-family: 'Cinzel', serif;
+  font-size: 1.4rem;
+  margin: 0;
+}
+.site-header nav { display: flex; align-items: center; gap: 1em; }
+.site-header .navlink { font-size: 0.9rem; }
+
+.pub-panel {
+  padding: 1em;
+  background: #f6f4ef;
+  border-bottom: 1px solid #ccc;
+}
+.pub-controls, .pub-download-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+.pub-download-row { margin-top: 0.75em; }
+.pub-panel label { font-size: 0.9rem; }
+.pub-panel input, .pub-panel select { margin-left: 0.4em; padding: 0.2em 0.4em; }
+.pub-panel button, .site-header button {
+  padding: 0.35em 0.9em;
+  cursor: pointer;
+  font: inherit;
+}
+.pub-panel select option:disabled { color: #999; }
+
+.pub-output { padding: 1em; }
+.pub-loading { color: #666; font-style: italic; }
+
+.pub-kalendar { max-width: 720px; margin: 0 auto; font-family: 'Open Sans', sans-serif; }
+.pub-title {
+  font-family: 'Cinzel', serif;
+  text-align: center;
+  letter-spacing: 0.1em;
+}
+
+table.pub-month {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 0 0.25em;
+  font-size: 0.85rem;
+}
+table.pub-month caption.pub-month-name {
+  font-family: 'Cinzel', serif;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 1.2em;
+  padding: 0.3em 0;
+}
+.pub-month th, .pub-month td {
+  border: 1px solid #ddd;
+  padding: 1px 5px;
+  vertical-align: top;
+}
+.pub-month thead th {
+  background: #eceae4;
+  font-weight: 700;
+  text-align: center;
+}
+.pub-month .pub-epact, .pub-month .pub-dl, .pub-month .pub-day { text-align: center; white-space: nowrap; }
+.pub-month .pub-rank { text-align: center; white-space: nowrap; }
+.pub-month tr.pub-sunday td { font-weight: 700; }
+
+.pub-notes { margin: 0.2em 0 0.6em; }
+.pub-note { font-size: 0.78rem; margin: 0.2em 0; }
+
+@media print {
+  .site-header, .pub-panel { display: none !important; }
+  .pub-output { padding: 0; }
+  table.pub-month { font-size: 8pt; }
+}
